@@ -1,0 +1,1571 @@
+{
+  "checked": "2026-10-10",
+  "works": [
+    {
+      "id": "dragon",
+      "title": "人物龙凤帛画",
+      "artist": "佚名",
+      "date": "战国",
+      "subject": "楚地丧葬中的女性形象",
+      "museum": "湖南博物院",
+      "source": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/details.html?id=4",
+      "image": "assets/originals/qin.jpg",
+      "note": "战国楚墓出土帛画，湖南博物院藏。"
+    },
+    {
+      "id": "han",
+      "title": "马王堆一号汉墓T形帛画",
+      "artist": "佚名",
+      "date": "西汉",
+      "subject": "墓主人辛追与随侍者",
+      "museum": "湖南博物院",
+      "source": "https://artsandculture.google.com/asset/t-shaped-painting-on-silk/gAHqReEjqoLl5w?hl=zh-cn",
+      "image": "assets/paintings/han-silk.jpg",
+      "note": "西汉，长沙马王堆一号汉墓出土，湖南博物院藏。"
+    },
+    {
+      "id": "admonitions",
+      "title": "女史箴图·梳妆段",
+      "artist": "传顾恺之",
+      "date": "现存本：约5—7世纪",
+      "subject": "西晋张华《女史箴》的劝诫叙事",
+      "museum": "大英博物馆",
+      "source": "https://www.britishmuseum.org/collection/object/A_1903-0408-0-1",
+      "image": "assets/originals/wei.jpg",
+      "note": "大英博物馆藏，藏品号1903,0408,0.1；现存九段。"
+    },
+    {
+      "id": "luoshen",
+      "title": "洛神赋图",
+      "artist": "传顾恺之",
+      "date": "现存本：宋摹",
+      "subject": "曹植《洛神赋》中的神女",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/234597.html",
+      "image": "assets/paintings/dpm-234597.jpg",
+      "note": "故宫博物院藏，宋摹本，传统图式归于顾恺之。"
+    },
+    {
+      "id": "lienv",
+      "title": "列女仁智图",
+      "artist": "旧传顾恺之",
+      "date": "现存本：南宋摹本",
+      "subject": "汉代刘向《列女传》故事",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228747.html",
+      "image": "assets/paintings/dpm-228747.jpg",
+      "note": "南宋摹本，旧题顾恺之；题材出自刘向《列女传》。"
+    },
+    {
+      "id": "fan",
+      "title": "挥扇仕女图",
+      "artist": "传周昉",
+      "date": "唐代（馆藏分期）",
+      "subject": "宫廷女子的闲居与日常动作",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228711.html",
+      "image": "assets/paintings/dpm-228711.jpg",
+      "note": "无作者款印，传周昉绘；有清宫等鉴藏印。"
+    },
+    {
+      "id": "music",
+      "title": "宫乐图",
+      "artist": "佚名",
+      "date": "唐代（馆方定名）",
+      "subject": "围桌饮茶与合乐的宫廷女性",
+      "museum": "台北故宫博物院",
+      "source": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000957",
+      "image": "assets/paintings/music.jpg",
+      "note": "台北故宫博物院藏，馆方现定为唐人作品。"
+    },
+    {
+      "id": "banquet",
+      "title": "韩熙载夜宴图",
+      "artist": "传顾闳中",
+      "date": "现存本：南宋摹本",
+      "subject": "五代南唐韩熙载夜宴",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228200.html",
+      "image": "assets/paintings/dpm-228200.jpg",
+      "note": "故宫断现存本为南宋孝宗至宁宗时期，约1163—1224年。"
+    },
+    {
+      "id": "palace",
+      "title": "宫中图",
+      "artist": "佚名，承周文矩绘画传统",
+      "date": "约1127—1140年（现存本）",
+      "subject": "南唐宫廷绘画传统中的内廷生活",
+      "museum": "克利夫兰艺术博物馆",
+      "source": "https://www.clevelandart.org/art/1976.1",
+      "image": "assets/paintings/palace.jpg",
+      "note": "克利夫兰艺术博物馆藏，藏品号1976.1，南宋。"
+    },
+    {
+      "id": "spinning",
+      "title": "纺车图",
+      "artist": "传王居正",
+      "date": "北宋（馆藏分期）",
+      "subject": "纺线与照料儿童",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228708.html",
+      "image": "assets/paintings/dpm-228708.jpg",
+      "note": "传王居正；有元代以来的收藏记录。"
+    },
+    {
+      "id": "xiaojing",
+      "title": "女孝经图",
+      "artist": "佚名",
+      "date": "南宋",
+      "subject": "唐代《女孝经》前九章的图解",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228760.html",
+      "image": "assets/paintings/dpm-228760.jpg",
+      "note": "故宫博物院藏，无作者款印；有曹溶及乾隆、嘉庆、宣统收藏印。"
+    },
+    {
+      "id": "moon",
+      "title": "瑶台步月图",
+      "artist": "佚名",
+      "date": "宋代",
+      "subject": "中秋赏月",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228755.html",
+      "image": "assets/paintings/dpm-228755.jpg",
+      "note": "宋代佚名画页，对开配乾隆题诗。"
+    },
+    {
+      "id": "duqiu",
+      "title": "杜秋图",
+      "artist": "周朗",
+      "date": "元代",
+      "subject": "唐代杜秋的文学形象",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228776.html",
+      "image": "assets/paintings/dpm-228776.jpg",
+      "note": "元代周朗作，有康里巎巎书诗及宋璲题记。"
+    },
+    {
+      "id": "princeton",
+      "title": "宫女图",
+      "artist": "佚名",
+      "date": "可能为元代，未署年款",
+      "subject": "宫廷居处中的女性",
+      "museum": "普林斯顿大学艺术博物馆",
+      "source": "https://artmuseum.princeton.edu/art/collections/objects/23161",
+      "image": "assets/paintings/princeton.jpg",
+      "note": "普林斯顿大学艺术博物馆藏，馆方断代为可能元代。"
+    },
+    {
+      "id": "yang",
+      "title": "杨妃上马图",
+      "artist": "传钱选",
+      "date": "元末或明初，14世纪",
+      "subject": "唐玄宗与杨贵妃出行故事",
+      "museum": "史密森尼国立亚洲艺术博物馆",
+      "source": "https://asia-archive.si.edu/object/F1957.14/",
+      "image": "assets/paintings/yang.jpg",
+      "note": "史密森尼国立亚洲艺术博物馆藏，十四世纪，传钱选。"
+    },
+    {
+      "id": "shu",
+      "title": "王蜀宫妓图",
+      "artist": "唐寅",
+      "date": "明代",
+      "subject": "五代前蜀王衍的宫廷故事",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228271.html",
+      "image": "assets/paintings/dpm-228271.jpg",
+      "note": "明代唐寅作，故宫馆藏现名《王蜀宫妓图》。"
+    },
+    {
+      "id": "xiang",
+      "title": "湘君湘夫人图",
+      "artist": "文徵明",
+      "date": "1517年",
+      "subject": "《楚辞·九歌》中的神灵形象",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228222.html",
+      "image": "assets/paintings/dpm-228222.jpg",
+      "note": "明正德十二年，1517年，文徵明作。"
+    },
+    {
+      "id": "wuling",
+      "title": "武陵春图",
+      "artist": "吴伟",
+      "date": "明代",
+      "subject": "才女武陵春",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228792.html",
+      "image": "assets/paintings/dpm-228792.jpg",
+      "note": "明代吴伟作；人物身世见卷后徐霖《武陵春传》。"
+    },
+    {
+      "id": "qin",
+      "title": "听琴图",
+      "artist": "陈洪绶",
+      "date": "明（馆藏编目分期）",
+      "subject": "女子抚琴与旁人聆听",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/233564.html",
+      "image": "assets/paintings/dpm-233564.jpg",
+      "note": "明代，陈洪绶，绫本设色。"
+    },
+    {
+      "id": "months",
+      "title": "月曼清游图册",
+      "artist": "陈枚",
+      "date": "1738年",
+      "subject": "宫廷女性的四时游赏",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228746.html",
+      "image": "assets/paintings/month-05.jpg",
+      "note": "清乾隆三年，1738年；一册十二开，每开配梁诗正题字。"
+    },
+    {
+      "id": "mulberry",
+      "title": "采桑图",
+      "artist": "闵贞",
+      "date": "清代",
+      "subject": "采桑劳动",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228777.html",
+      "image": "assets/paintings/dpm-228777.jpg",
+      "note": "清代闵贞作，署正斋款。"
+    },
+    {
+      "id": "reading",
+      "title": "元机诗意图",
+      "artist": "改琦",
+      "date": "1825年",
+      "subject": "唐代诗人鱼玄机的诗意形象",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228734.html",
+      "image": "assets/paintings/dpm-228734.jpg",
+      "note": "清道光五年，1825年，改琦作；后有沈梧题识。"
+    },
+    {
+      "id": "stories",
+      "title": "人物故事图册",
+      "artist": "仇英",
+      "date": "明代",
+      "subject": "历史女性与文学故事",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228286.html",
+      "image": "assets/paintings/stories-0.jpg",
+      "note": "绢本设色，每开41.4 × 33.8厘米。明代。"
+    },
+    {
+      "id": "bugun",
+      "title": "杂画图册 · 夔龙补衮",
+      "artist": "陈洪绶",
+      "date": "明代",
+      "subject": "女红与补衮寓意",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228174.html",
+      "image": "assets/paintings/bugun-0.jpg",
+      "note": "绢本设色，每开30.2 × 25.1厘米。明代。"
+    },
+    {
+      "id": "admonitions-song",
+      "title": "女史箴图 · 故宫宋摹本",
+      "artist": "佚名，摹顾恺之图式",
+      "date": "宋代摹本",
+      "subject": "张华《女史箴》中的女性故事",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/231643.html",
+      "image": "assets/paintings/admonitions-song-0.jpg",
+      "note": "纸本墨笔，27.9 × 601厘米。宋代摹本。"
+    },
+    {
+      "id": "peddler",
+      "title": "货郎图",
+      "artist": "李嵩",
+      "date": "南宋，1211年",
+      "subject": "乡村交易、妇女与儿童",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228205.html",
+      "image": "assets/paintings/peddler-0.jpg",
+      "note": "绢本设色，25.5 × 70.4厘米。南宋，1211年。"
+    },
+    {
+      "id": "tongyin",
+      "title": "桐荫仕女图屏",
+      "artist": "宫廷画家，佚名",
+      "date": "清康熙时期",
+      "subject": "庭院中的女性与室内空间",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/228991.html",
+      "image": "assets/paintings/tongyin-0.jpg",
+      "note": "绢本设色，128.5 × 326厘米。清康熙时期。"
+    },
+    {
+      "id": "reading-screen",
+      "title": "雍亲王题书堂深居图屏 · 观书沉吟",
+      "artist": "宫廷画师",
+      "date": "清代",
+      "subject": "女性阅读与室内陈设",
+      "museum": "故宫博物院",
+      "source": "https://www.dpm.org.cn/collection/paint/232025.html",
+      "image": "assets/paintings/reading-screen-0.jpg",
+      "note": "绢本设色，184 × 98厘米。清代。"
+    },
+    {
+      "id": "yuan-portrait",
+      "title": "仕女像",
+      "artist": "佚名",
+      "date": "元代，14世纪",
+      "subject": "女性肖像",
+      "museum": "大都会艺术博物馆",
+      "source": "https://www.metmuseum.org/art/collection/search/36041",
+      "image": "assets/paintings/yuan-portrait-0.jpg",
+      "note": "绢本墨笔，画心78.7 × 38.1厘米。元代，14世纪。"
+    },
+    {
+      "id": "nine-songs",
+      "title": "九歌图册",
+      "artist": "佚名，仿赵孟頫",
+      "date": "14—15世纪，元或明",
+      "subject": "《楚辞》神祇与文学图像",
+      "museum": "大都会艺术博物馆",
+      "source": "https://www.metmuseum.org/art/collection/search/40511",
+      "image": "assets/paintings/nine-songs-0.jpg",
+      "note": "纸本墨笔，十一开，26.4 × 15.9厘米。14—15世纪，元或明。"
+    }
+  ],
+  "images": [
+    {
+      "work": "dragon",
+      "file": "assets/originals/qin.jpg",
+      "sha256": "67ac059fee8fd7b5e41a1b83aeb2d827cc19cf6f755dcf832c0dc874d3bd6ffc",
+      "source": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/details.html?id=4"
+    },
+    {
+      "work": "han",
+      "file": "assets/paintings/han-silk.jpg",
+      "sha256": "81d9576f0ad600db4806e3e049a62ce3d8b9b8bd51c9000f512530f459b3ef3c",
+      "source": "https://lh3.googleusercontent.com/ci/AL18g_SDDbMlJYnZYMZqWFzjm_LA-wF6mPrKKY7aDtf21n1eR41Pet0YDTm78LVNUT3gC-78p_THBQ"
+    },
+    {
+      "work": "admonitions",
+      "file": "assets/originals/wei.jpg",
+      "sha256": "f34ad9fe38c2e204c7086b44f5e1abe6068b3c3c0129c6e0bd93aef2d85c24a2",
+      "source": "https://commons.wikimedia.org/wiki/File:Admonitions_Scroll_Scene_7.jpg"
+    },
+    {
+      "work": "luoshen",
+      "file": "assets/paintings/dpm-234597.jpg",
+      "sha256": "74f0241baa9935c60bcfc479116f02c05f28ebd95d2101ba703bb7b57c8f990a",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/04/14/s58f034514fc6d.jpg"
+    },
+    {
+      "work": "lienv",
+      "file": "assets/paintings/dpm-228747.jpg",
+      "sha256": "9665d7eabebace812ca2e225b39e395cc09a7fbceb9a63d500ded38f4900b7cc",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/03/31/s58de19af040eb.jpg"
+    },
+    {
+      "work": "fan",
+      "file": "assets/paintings/dpm-228711.jpg",
+      "sha256": "8500257a0bf5a80798be26298c7f61020750431eafcc7dbe5fb07f7e8bcb9866",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/04/01/s58defe50db398.jpg"
+    },
+    {
+      "work": "music",
+      "file": "assets/paintings/music.jpg",
+      "sha256": "a8ccc6ed6c52ade6eff10d4d49319822b8909b64f72e5560c7d4a9d15a1891e7",
+      "source": "https://theme.npm.edu.tw/selection/att/collection/04000957/17009777.jpg"
+    },
+    {
+      "work": "banquet",
+      "file": "assets/paintings/dpm-228200.jpg",
+      "sha256": "b0a5c18f1989a8a5d6df27e248fc0700a8071b963de5e4b6fd6c1955bd619e7a",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/03/31/s58de19af038a5.jpg"
+    },
+    {
+      "work": "palace",
+      "file": "assets/paintings/palace.jpg",
+      "sha256": "00548a55b544c216fd8ea8c55c88d8eb50872783bacd0a6c814c879a33195ee2",
+      "source": "https://openaccess-cdn.clevelandart.org/1976.1/1976.1_print.jpg"
+    },
+    {
+      "work": "spinning",
+      "file": "assets/paintings/dpm-228708.jpg",
+      "sha256": "6e6e9e2757613c60624d824936b789cf3460ea161a3b5553af9d8775556d1b3c",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/03/31/s58de147988dfa.jpg"
+    },
+    {
+      "work": "xiaojing",
+      "file": "assets/paintings/dpm-228760.jpg",
+      "sha256": "1322fcab3e2fdd96cfa0cabdd8c39e2bdb34048c92fccd7ae2828b824f9afb16",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/03/31/s58de127436595.jpg"
+    },
+    {
+      "work": "moon",
+      "file": "assets/paintings/dpm-228755.jpg",
+      "sha256": "013240a6ac6e8e9f628f147ddbe77e37e5c2d24466dfdb0801adef460b6c53c2",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/27521[1024].jpg"
+    },
+    {
+      "work": "duqiu",
+      "file": "assets/paintings/dpm-228776.jpg",
+      "sha256": "3ac3c3e328bee8bded342a3a1d2073a96a52c0ba9708be6051ff738ea6cead5e",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/04/21/s58f9ca95bfffc.jpg"
+    },
+    {
+      "work": "princeton",
+      "file": "assets/paintings/princeton.jpg",
+      "sha256": "92437dc8ce8f39802b3c0b0c8fbc1dccfce493eadfb18d104bdab29d2bdf9a19",
+      "source": "https://media.artmuseum.princeton.edu/iiif/3/collection/INV03198/full/!1024,1024/0/default.jpg"
+    },
+    {
+      "work": "yang",
+      "file": "assets/paintings/yang.jpg",
+      "sha256": "b8298148e6b580873642fd930c4f5e57e2a1ad1dbbb36a9dbf706fb0f2ca83a5",
+      "source": "https://ids.si.edu/ids/deliveryService?id=FS-8013_12&max=1200"
+    },
+    {
+      "work": "shu",
+      "file": "assets/paintings/dpm-228271.jpg",
+      "sha256": "a5b5de3103cfabc4461a806afd3d56129286d863c7acd42db73448c658e810fb",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/887.jpg"
+    },
+    {
+      "work": "xiang",
+      "file": "assets/paintings/dpm-228222.jpg",
+      "sha256": "37639ec7641ce055eadb2213fac086da05bd1dcf6147d6110a38e2bca131f430",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/2715.jpg"
+    },
+    {
+      "work": "wuling",
+      "file": "assets/paintings/dpm-228792.jpg",
+      "sha256": "4ca44ccace28b4880102d5003889dc5bee3ff77f3c0aff6a2b99062a4fac9c6e",
+      "source": "https://img.dpm.org.cn/Uploads/tupianyingxiang/吴伟武陵春图卷.jpg"
+    },
+    {
+      "work": "qin",
+      "file": "assets/paintings/dpm-233564.jpg",
+      "sha256": "f855b079a561fe471f84d6f8a8066892e38f3d5ed077785b6ad8dc5bc014ee14",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/55858.jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-04.jpg",
+      "sha256": "3de65611af8f656bec85bcc9024158b142b2b506dedcfb86fe757209f863967e",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10238[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-05.jpg",
+      "sha256": "af9a0cafa360a329dbb3afb1620abc52877b7ee1e753a767e23b3d8dc4141f78",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10229[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-09.jpg",
+      "sha256": "d83e237a4001469a13ee1ccd56d9059977024a1d48d6060c5ca32becfac6ccf8",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10233[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-12.jpg",
+      "sha256": "05005efb7125367b62366359e5728766fd218b5491b0779d60de05bacd69733c",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10237[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-01.jpg",
+      "sha256": "d601e99eb8de67f834dcb3bf02b6b9cc468d252d396e41c1f5f13b79a5ba1040",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10232.jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-03.jpg",
+      "sha256": "a935b2d8041be7fb0dbdf6e18aef250e779a7d953260f8e3cb886e9c8052777f",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10236[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-02.jpg",
+      "sha256": "39474ccc1408ade65fcde2288187e4b5cec7ef493fd14cd62ae8f7e7f4aacad5",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10228.jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-08.jpg",
+      "sha256": "36383f04acc7578af6dd2fa57188d3a0628e6f2c163876d5285529259094ee7c",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10227[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-10.jpg",
+      "sha256": "685b3d033764617c3b06a7aeb997bff0264c0e312107a1aa5b4fce6c951fc422",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10234[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-07.jpg",
+      "sha256": "2adc639a7fbca0bd94d8333b99e933c177778e32bfa28b6da9bb38f46daea3ef",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10231[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-11.jpg",
+      "sha256": "7e396710405f82f29683f936752676c700bb127af5c4eef8a506585edf79e766",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10235[1024].jpg"
+    },
+    {
+      "work": "months",
+      "file": "assets/paintings/month-06.jpg",
+      "sha256": "b6db3dfcfd5707f4f715aabed8ae8f9e9911ed92f4d35242569e150f4c2fe645",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10230.jpg"
+    },
+    {
+      "work": "mulberry",
+      "file": "assets/paintings/dpm-228777.jpg",
+      "sha256": "4c85db4076caf9ed546013b3c64dcb4d50b6546ce8f574a73679829b628d8f03",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10243[1024].jpg"
+    },
+    {
+      "work": "reading",
+      "file": "assets/paintings/dpm-228734.jpg",
+      "sha256": "a37b369dacbc8a745f55cafa3e056cd9a0e1316845da80b3965bee229ff3b6b3",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/10253[1024].jpg"
+    },
+    {
+      "work": "palace",
+      "file": "assets/paintings/palace-alt15.jpg",
+      "source": "https://openaccess-cdn.clevelandart.org/1976.1/1976.1_alt15_print.jpg",
+      "sha256": "33a67e60b867de93d98e97f5da30443f3153db2cee6f1f912450463d5fce40af"
+    },
+    {
+      "work": "palace",
+      "file": "assets/paintings/palace-alt12.jpg",
+      "source": "https://openaccess-cdn.clevelandart.org/1976.1/1976.1_alt12_print.jpg",
+      "sha256": "b53d2702f4963b20211eea18f73ece4400be430ffe300a67859438db6d7e4587"
+    },
+    {
+      "work": "stories",
+      "file": "assets/paintings/stories-2.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/891.jpg",
+      "sha256": "ee09ebf7e02f5969cf57af21104943c07e6478123d151a217a17b7bc6d72d4db"
+    },
+    {
+      "work": "stories",
+      "file": "assets/paintings/stories-1.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/918.jpg",
+      "sha256": "e033c759bdaa2acac6d8b22e3cbccc790af4ac5364926458ea7ce5beda98c731"
+    },
+    {
+      "work": "stories",
+      "file": "assets/paintings/stories-0.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/896.jpg",
+      "sha256": "0886e94c735605fe87b8deeaca880cb39426099758e138b1c41502b2b257dac8"
+    },
+    {
+      "work": "stories",
+      "file": "assets/paintings/stories-4.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/889.jpg",
+      "sha256": "f4a614263390dc80c156bcac52c3658f02c8a3c4b80c28d372d358b5932aee05"
+    },
+    {
+      "work": "stories",
+      "file": "assets/paintings/stories-3.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/914.jpg",
+      "sha256": "c07784f40d8e59ff83ad305d941c057155020b52c7b8740ddf20881e9430b160"
+    },
+    {
+      "work": "bugun",
+      "file": "assets/paintings/bugun-0.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/1884[1024].jpg",
+      "sha256": "df1c6a26e39e12760e57b67e04c8ad31f921e16afc04c15e44a4b6fe704ac5b8"
+    },
+    {
+      "work": "admonitions-song",
+      "file": "assets/paintings/admonitions-song-0.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/04/11/s58ec852aaaeb0.jpg",
+      "sha256": "86a974b5da44f43d7f73a726081e1eeaf6b822f36cb6460e74c95e71c1e80b4f"
+    },
+    {
+      "work": "peddler",
+      "file": "assets/paintings/peddler-0.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/2017/03/31/s58de10c46e445.jpg",
+      "sha256": "92926bd29f449cd741670b57868cd6e87d3d7f0ca8c222672da2cce2451924bd"
+    },
+    {
+      "work": "tongyin",
+      "file": "assets/paintings/tongyin-0.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/8922[1024].jpg",
+      "sha256": "bff55457899f73e226d3a74c00c65571c83a17dc41fce62f32884f7cbe273500"
+    },
+    {
+      "work": "tongyin",
+      "file": "assets/paintings/tongyin-1.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/8923[1024].jpg",
+      "sha256": "484656a014ea38a1b65b8d157a43ceb85fed78a78228e068d3eca294c03fb67a"
+    },
+    {
+      "work": "reading-screen",
+      "file": "assets/paintings/reading-screen-0.jpg",
+      "source": "https://img.dpm.org.cn/Uploads/Picture/dc/13514[1024].jpg",
+      "sha256": "0df601717e3648b4f8a84792b88734114d81d1ae769e0256cfc446b6ecffca2c"
+    },
+    {
+      "work": "yuan-portrait",
+      "file": "assets/paintings/yuan-portrait-0.jpg",
+      "source": "https://images.metmuseum.org/CRDImages/as/original/29_100_476.JPG",
+      "sha256": "ee349dbf13ebb3c8ab82690a6a50ecfb3091a8885c4de36d8fbe39f9f66018d1"
+    },
+    {
+      "work": "nine-songs",
+      "file": "assets/paintings/nine-songs-0.jpg",
+      "source": "https://images.metmuseum.org/CRDImages/as/original/DP375123_CRD.jpg",
+      "sha256": "7b319abeb3349ea8948f5ad6f4dddd1536da02a733a2a4adb37dce3236fdcd32"
+    }
+  ],
+  "counting": {
+    "storyEntries": 32,
+    "namedBiographies": 28,
+    "literaryTraditions": 2,
+    "groupStories": 2,
+    "identityCategories": 24,
+    "independentWorks": 30,
+    "note": "Story and identity counts describe this curated collection. An album counts as one work regardless of the number of leaves."
+  },
+  "imageTreatment": "Museum source images remain unmodified. Eight transparent AI-assisted redraws are used only as era illustrations in the continuous handscroll; they are not identified as portraits of the people in the biographies.",
+  "displayFigures": [
+    {
+      "era": "early",
+      "referenceWork": "dragon",
+      "file": "assets/figures/early.png",
+      "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
+      "sha256": "27fcb59ac2f760b9554a0ecef0c7e8fdc3c0d229c890359b5023ca673cc3c1c4"
+    },
+    {
+      "era": "wei",
+      "referenceWork": "admonitions",
+      "file": "assets/figures/wei.png",
+      "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
+      "sha256": "a293ad3326940e66e0960c76857f6dac9aa323f1743a3fe3c10e0f2401e21478"
+    },
+    {
+      "era": "tang",
+      "referenceWork": "fan",
+      "file": "assets/figures/tang.png",
+      "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
+      "sha256": "81090bab68e4a38a89a7db59ec51331d3c9d71600f5ead7cd46de97d7b46a506"
+    },
+    {
+      "era": "five",
+      "referenceWork": "palace",
+      "file": "assets/figures/five.png",
+      "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
+      "sha256": "5bcf988ab2ae128ac238d8fe9e43a586c99aab2d3c5bcb131f0016bebba45a97"
+    },
+    {
+      "era": "song",
+      "referenceWork": "spinning",
+      "file": "assets/figures/song.png",
+      "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
+      "sha256": "159b325db1c15486508091fea7f0717c33b6866f6b3f67aacfe4ba56cb80cd38"
+    },
+    {
+      "era": "yuan",
+      "referenceWork": "duqiu",
+      "file": "assets/figures/yuan.png",
+      "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
+      "sha256": "54881b22bbbabb9fe076e6237ae4c40969684981af2dfb3c9b8995246581870b"
+    },
+    {
+      "era": "ming",
+      "referenceWork": "wuling",
+      "file": "assets/figures/ming.png",
+      "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
+      "sha256": "c87c50f70016ef0b2a30f72a52706299d9833b477b6ea056615a2963a3203436"
+    },
+    {
+      "era": "qing",
+      "referenceWork": "reading",
+      "file": "assets/figures/qing.png",
+      "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
+      "sha256": "cb42a3741e63f4ca520fb7f4352b348682cb319a5742d4a88371b707ec886854"
+    }
+  ],
+  "readingReferences": {
+    "dragon": [
+      {
+        "title": "湖南博物院｜人物龙凤帛画馆藏档案",
+        "url": "https://www.chnmuseum.cn/portals/0/web/zt/gmdc2022/details.html?id=4",
+        "description": ""
+      }
+    ],
+    "han": [
+      {
+        "title": "湖南博物院｜马王堆一号汉墓T形帛画馆藏档案",
+        "url": "https://artsandculture.google.com/asset/t-shaped-painting-on-silk/gAHqReEjqoLl5w?hl=zh-cn",
+        "description": ""
+      }
+    ],
+    "admonitions": [
+      {
+        "title": "大英博物馆｜女史箴图·梳妆段馆藏档案",
+        "url": "https://www.britishmuseum.org/collection/object/A_1903-0408-0-1",
+        "description": ""
+      },
+      {
+        "title": "大英博物馆｜女史箴图专题",
+        "url": "https://www.britishmuseum.org/exhibitions/admonitions-instructress-court-ladies",
+        "description": "断代、文本背景及1914年重新装裱信息。"
+      }
+    ],
+    "luoshen": [
+      {
+        "title": "故宫博物院｜洛神赋图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/234597.html",
+        "description": ""
+      }
+    ],
+    "lienv": [
+      {
+        "title": "故宫博物院｜列女仁智图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228747.html",
+        "description": ""
+      }
+    ],
+    "fan": [
+      {
+        "title": "故宫博物院｜挥扇仕女图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228711.html",
+        "description": ""
+      }
+    ],
+    "music": [
+      {
+        "title": "台北故宫博物院｜宫乐图馆藏档案",
+        "url": "https://theme.npm.edu.tw/selection/Article.aspx?sNo=04000957",
+        "description": ""
+      }
+    ],
+    "banquet": [
+      {
+        "title": "故宫博物院｜韩熙载夜宴图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228200.html",
+        "description": ""
+      }
+    ],
+    "palace": [
+      {
+        "title": "克利夫兰艺术博物馆｜宫中图馆藏档案",
+        "url": "https://www.clevelandart.org/art/1976.1",
+        "description": ""
+      }
+    ],
+    "spinning": [
+      {
+        "title": "故宫博物院｜纺车图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228708.html",
+        "description": ""
+      },
+      {
+        "title": "故宫名画记｜纺车图",
+        "url": "https://minghuaji.dpm.org.cn/paint/detail?id=hcvpgg450tfngvufnnz5wky43lczk78z&topicType=15",
+        "description": "保留“王居正（传）”的作者归属。"
+      }
+    ],
+    "xiaojing": [
+      {
+        "title": "故宫博物院 · 女孝经图卷（李湜撰）",
+        "url": "https://www.dpm.org.cn/collection/paint/228760.html",
+        "description": "章节、人物画法、南宋断代与收藏记录。"
+      },
+      {
+        "title": "故宫博物院 · 列女仁智图卷",
+        "url": "https://www.dpm.org.cn/collection/paint/228747.html",
+        "description": "列女故事与早期人物画传统。"
+      },
+      {
+        "title": "故宫博物院 · 纺车图卷",
+        "url": "https://www.dpm.org.cn/collection/paint/228708.html",
+        "description": "女性纺织劳动题材的对照阅读。"
+      }
+    ],
+    "moon": [
+      {
+        "title": "故宫博物院｜瑶台步月图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228755.html",
+        "description": ""
+      }
+    ],
+    "duqiu": [
+      {
+        "title": "故宫博物院｜杜秋图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228776.html",
+        "description": ""
+      }
+    ],
+    "princeton": [
+      {
+        "title": "普林斯顿大学艺术博物馆｜宫女图馆藏档案",
+        "url": "https://artmuseum.princeton.edu/art/collections/objects/23161",
+        "description": ""
+      }
+    ],
+    "yang": [
+      {
+        "title": "史密森尼国立亚洲艺术博物馆｜杨妃上马图馆藏档案",
+        "url": "https://asia-archive.si.edu/object/F1957.14/",
+        "description": ""
+      }
+    ],
+    "shu": [
+      {
+        "title": "故宫博物院｜王蜀宫妓图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228271.html",
+        "description": ""
+      }
+    ],
+    "xiang": [
+      {
+        "title": "故宫博物院｜湘君湘夫人图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228222.html",
+        "description": ""
+      }
+    ],
+    "wuling": [
+      {
+        "title": "故宫博物院｜武陵春图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228792.html",
+        "description": ""
+      }
+    ],
+    "qin": [
+      {
+        "title": "故宫博物院｜听琴图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/233564.html",
+        "description": ""
+      }
+    ],
+    "months": [
+      {
+        "title": "故宫博物院｜月曼清游图册馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228746.html",
+        "description": ""
+      },
+      {
+        "title": "李久芳｜牙雕《月曼清游册》",
+        "url": "https://www.dpm.org.cn/Uploads/pdf/1951/T00026_00.pdf",
+        "description": "故宫发布的研究文章；用于比较绘画与牙雕的媒材转换，不替换绘画册页顺序。"
+      }
+    ],
+    "mulberry": [
+      {
+        "title": "故宫博物院｜采桑图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228777.html",
+        "description": ""
+      }
+    ],
+    "reading": [
+      {
+        "title": "故宫博物院｜元机诗意图馆藏档案",
+        "url": "https://www.dpm.org.cn/collection/paint/228734.html",
+        "description": ""
+      }
+    ],
+    "stories": [
+      {
+        "title": "故宫博物院 · 人物故事图册",
+        "url": "https://www.dpm.org.cn/collection/paint/228286.html",
+        "description": "作品编目、图像与馆藏介绍。"
+      }
+    ],
+    "bugun": [
+      {
+        "title": "故宫博物院 · 杂画图册 · 夔龙补衮",
+        "url": "https://www.dpm.org.cn/collection/paint/228174.html",
+        "description": "作品编目、图像与馆藏介绍。"
+      },
+      {
+        "title": "故宫名画记 · 夔龙补衮图",
+        "url": "https://minghuaji.dpm.org.cn/paint/detail?id=93a0494ec9bb49b8afda9d7bc6301226&topicType=8",
+        "description": "画名典故与题材说明。"
+      }
+    ],
+    "admonitions-song": [
+      {
+        "title": "故宫博物院 · 女史箴图 · 故宫宋摹本",
+        "url": "https://www.dpm.org.cn/collection/paint/231643.html",
+        "description": "作品编目、图像与馆藏介绍。"
+      }
+    ],
+    "peddler": [
+      {
+        "title": "故宫博物院 · 货郎图",
+        "url": "https://www.dpm.org.cn/collection/paint/228205.html",
+        "description": "作品编目、图像与馆藏介绍。"
+      },
+      {
+        "title": "故宫 · 乐事还同万众心——《货郎图》解读",
+        "url": "https://www.dpm.org.cn/paints/talk/207744.html",
+        "description": "关于作品情境与题材的延伸研究。"
+      }
+    ],
+    "tongyin": [
+      {
+        "title": "故宫博物院 · 桐荫仕女图屏",
+        "url": "https://www.dpm.org.cn/collection/paint/228991.html",
+        "description": "作品编目、图像与馆藏介绍。"
+      }
+    ],
+    "reading-screen": [
+      {
+        "title": "故宫博物院 · 雍亲王题书堂深居图屏 · 观书沉吟",
+        "url": "https://www.dpm.org.cn/collection/paint/232025.html",
+        "description": "作品编目、图像与馆藏介绍。"
+      }
+    ],
+    "yuan-portrait": [
+      {
+        "title": "大都会艺术博物馆 · 仕女像",
+        "url": "https://www.metmuseum.org/art/collection/search/36041",
+        "description": "作品编目、图像与馆藏介绍。"
+      }
+    ],
+    "nine-songs": [
+      {
+        "title": "大都会艺术博物馆 · 九歌图册",
+        "url": "https://www.metmuseum.org/art/collection/search/40511",
+        "description": "作品编目、图像与馆藏介绍。"
+      }
+    ]
+  },
+  "people": [
+    {
+      "id": "fuhao",
+      "name": "妇好",
+      "era": "early",
+      "years": "商代晚期",
+      "kind": "person",
+      "roles": [
+        "军事与守土",
+        "政务与治理",
+        "宫廷与宗室"
+      ],
+      "references": [
+        {
+          "title": "中国国家博物馆 · “妇好”青铜三联甗",
+          "url": "https://www.chnmuseum.cn/zp/zpml/kgfjp/202107/t20210728_250870.shtml"
+        }
+      ]
+    },
+    {
+      "id": "baqing",
+      "name": "巴清",
+      "era": "early",
+      "years": "战国末至秦",
+      "kind": "person",
+      "roles": [
+        "商业与经营"
+      ],
+      "references": [
+        {
+          "title": "重庆历史名人馆 · 巴寡妇清",
+          "url": "https://www.cq.gov.cn/zjcq/bywh/mrg/202312/t20231207_12670165.html"
+        },
+        {
+          "title": "原始文献 ·《史记·货殖列传》",
+          "url": "https://ctext.org/shiji/huo-zhi-lie-zhuan/zhs"
+        }
+      ]
+    },
+    {
+      "id": "banzhao",
+      "name": "班昭",
+      "era": "early",
+      "years": "东汉",
+      "kind": "person",
+      "roles": [
+        "学术与著述",
+        "教育与传授",
+        "宫廷与宗室"
+      ],
+      "references": [
+        {
+          "title": "国家图书馆 · 中华传统文化百部经典，《汉书》导读",
+          "url": "https://www.nlc.cn/web/zdxm/bbjd/dtxx/xmdt/20231127_217345.shtml"
+        },
+        {
+          "title": "原始文献线索 ·《后汉书·列女传》班昭传",
+          "url": "https://ctext.org/dictionary.pl?char=班昭&if=gb"
+        }
+      ]
+    },
+    {
+      "id": "caiyan",
+      "name": "蔡琰",
+      "era": "early",
+      "years": "汉末 · 生卒年不详",
+      "kind": "person",
+      "roles": [
+        "诗文与叙事",
+        "迁徙与流离",
+        "家庭与养育",
+        "学术与著述"
+      ],
+      "references": [
+        {
+          "title": "《后汉书·列女传》蔡琰传文及诗（《古今图书集成》引录）",
+          "url": "https://www.shidianguji.com/zh/book/GJTS16/chapter/1lphsq12y48wy"
+        }
+      ]
+    },
+    {
+      "id": "xiedaoyun",
+      "name": "谢道韫",
+      "era": "wei",
+      "years": "东晋",
+      "kind": "person",
+      "roles": [
+        "诗文与叙事"
+      ],
+      "references": [
+        {
+          "title": "原始文献 ·《世说新语·言语》",
+          "url": "https://ctext.org/shi-shuo-xin-yu/yan-yu/ens"
+        }
+      ]
+    },
+    {
+      "id": "xian",
+      "name": "冼夫人",
+      "era": "wei",
+      "years": "梁、陈至隋",
+      "kind": "person",
+      "roles": [
+        "政务与治理",
+        "军事与守土",
+        "跨地域交流"
+      ],
+      "references": [
+        {
+          "title": "国家民委 · 岭南冼夫人",
+          "url": "https://www.neac.gov.cn/seac/c103391/202212/1159939.shtml"
+        }
+      ]
+    },
+    {
+      "id": "shangguan",
+      "name": "上官婉儿",
+      "era": "tang",
+      "years": "664—710",
+      "kind": "person",
+      "roles": [
+        "政务与治理",
+        "诗文与叙事",
+        "宫廷与宗室"
+      ],
+      "references": [
+        {
+          "title": "中国文化报 · 上官婉儿墓志公布报道",
+          "url": "https://nepaper.ccdy.cn/page/1/2014-01/14/8/201401148_pdf.PDF"
+        }
+      ]
+    },
+    {
+      "id": "xuetao",
+      "name": "薛涛",
+      "era": "tang",
+      "years": "中唐",
+      "kind": "person",
+      "roles": [
+        "诗文与叙事",
+        "工艺与技术",
+        "侍奉与依附"
+      ],
+      "references": [
+        {
+          "title": "四川省地方志工作办公室 · 薛涛",
+          "url": "https://www.scsqw.cn/scyx/ytsc/sclsmrgs/content_164434"
+        }
+      ]
+    },
+    {
+      "id": "yuxuanji",
+      "name": "鱼玄机",
+      "era": "tang",
+      "years": "晚唐",
+      "kind": "person",
+      "roles": [
+        "诗文与叙事",
+        "宗教与信仰"
+      ],
+      "references": [
+        {
+          "title": "故宫博物院 · 元机诗意图",
+          "url": "https://www.dpm.org.cn/collection/paint/228734.html"
+        },
+        {
+          "title": "中国哲学书电子化计划 · 《唐女郎鱼玄机诗》",
+          "url": "https://ctext.org/wiki.pl?if=gb&remap=gb&res=631667"
+        }
+      ]
+    },
+    {
+      "id": "wencheng",
+      "name": "文成公主",
+      "era": "tang",
+      "years": "？—680",
+      "kind": "person",
+      "roles": [
+        "外交与和亲",
+        "跨地域交流",
+        "宫廷与宗室"
+      ],
+      "references": [
+        {
+          "title": "故宫博物院 · 文成公主",
+          "url": "https://www.dpm.org.cn/lemmas/240045.html"
+        },
+        {
+          "title": "故宫博物院 · 文成公主与两位大臣像",
+          "url": "https://ggzl.dpm.org.cn/pages/exhibit_works/details?id=5257"
+        }
+      ]
+    },
+    {
+      "id": "wuzetian",
+      "name": "武则天",
+      "era": "tang",
+      "years": "624—705",
+      "kind": "person",
+      "roles": [
+        "帝位与统治",
+        "政务与治理",
+        "宫廷与宗室",
+        "宗教与信仰"
+      ],
+      "references": [
+        {
+          "title": "河南博物院 · 武则天金简",
+          "url": "https://www.chnmus.net/ch/collection/treasure/details.html?id=508161850642982087"
+        },
+        {
+          "title": "河南博物院 · 每周一品：武则天金简",
+          "url": "https://www.chnmus.net/sitesources/hnsbwy/page_pc/dzjp/mzyp/article5ec7e9a94e534b55bfada4743a9dd1bd.html"
+        }
+      ]
+    },
+    {
+      "id": "huangchonggu",
+      "name": "黄崇嘏",
+      "era": "five",
+      "years": "晚唐至前蜀故事传统",
+      "kind": "tradition",
+      "roles": [
+        "政务与治理",
+        "诗文与叙事"
+      ],
+      "references": [
+        {
+          "title": "原始文献 ·《北梦琐言》",
+          "url": "https://zh.wikisource.org/zh-hans/北夢瑣言_(四庫全書本)/全覽"
+        }
+      ]
+    },
+    {
+      "id": "huarui",
+      "name": "花蕊夫人",
+      "era": "five",
+      "years": "五代十国",
+      "kind": "tradition",
+      "roles": [
+        "诗文与叙事",
+        "宫廷与宗室"
+      ],
+      "references": [
+        {
+          "title": "原始文献辨析 ·《西圃丛辨》花蕊夫人条",
+          "url": "https://www.shidianguji.com/zh/book/HY1343/chapter/1l3w9ao5eeqly"
+        },
+        {
+          "title": "中国哲学书电子化计划 · 花蕊夫人文献索引",
+          "url": "https://ctext.org/dictionary.pl?char=花蕊夫人&if=en&remap=gb"
+        }
+      ]
+    },
+    {
+      "id": "women-musicians",
+      "name": "夜宴中的女乐",
+      "era": "five",
+      "years": "五代南唐题材",
+      "kind": "group",
+      "roles": [
+        "音乐与表演",
+        "侍奉与依附"
+      ],
+      "references": [
+        {
+          "title": "故宫博物院 · 韩熙载夜宴图",
+          "url": "https://www.dpm.org.cn/collection/paint/228200.html"
+        },
+        {
+          "title": "故宫博物院 · 《韩熙载夜宴图的故事》",
+          "url": "https://www.dpm.org.cn/journal_detail/261914.html"
+        }
+      ]
+    },
+    {
+      "id": "liqingzhao",
+      "name": "李清照",
+      "era": "song",
+      "years": "1084—约1155",
+      "kind": "person",
+      "roles": [
+        "诗文与叙事",
+        "学术与著述",
+        "收藏与鉴赏",
+        "迁徙与流离"
+      ],
+      "references": [
+        {
+          "title": "国家典籍博物馆 · 李清照相关典籍",
+          "url": "https://www.nlc.cn/nmcb/jpww/gengu/20240904_2641045.shtml"
+        }
+      ]
+    },
+    {
+      "id": "zhushuzhen",
+      "name": "朱淑真",
+      "era": "song",
+      "years": "宋代",
+      "kind": "person",
+      "roles": [
+        "诗文与叙事"
+      ],
+      "references": [
+        {
+          "title": "对外经济贸易大学图书馆 ·《朱淑真集校注》版本说明",
+          "url": "https://opac.lib.uibe.edu.cn/opac/book/f1614ca36a3e41024a3cd46b2a48dcb6"
+        },
+        {
+          "title": "国家图书馆 · 中秋夜家宴咏月",
+          "url": "https://weibo.com/2/detail/5344037961205932"
+        }
+      ]
+    },
+    {
+      "id": "spinners",
+      "name": "纺线与育儿的妇女",
+      "era": "song",
+      "years": "宋代图像中的无名女性",
+      "kind": "group",
+      "roles": [
+        "农桑与劳动",
+        "家庭与养育",
+        "工艺与技术"
+      ],
+      "references": [
+        {
+          "title": "故宫博物院 · 王居正纺车图卷",
+          "url": "https://www.dpm.org.cn/collection/paint/228708.html"
+        }
+      ]
+    },
+    {
+      "id": "zhukerou",
+      "name": "朱克柔",
+      "era": "song",
+      "years": "南宋高宗时期",
+      "kind": "person",
+      "roles": [
+        "工艺与技术"
+      ],
+      "references": [
+        {
+          "title": "上海博物馆 · 朱克柔缂丝莲塘乳鸭图",
+          "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00000098"
+        }
+      ]
+    },
+    {
+      "id": "huangdaopo",
+      "name": "黄道婆",
+      "era": "yuan",
+      "years": "宋末元初",
+      "kind": "person",
+      "roles": [
+        "工艺与技术",
+        "教育与传授",
+        "农桑与劳动",
+        "跨地域交流"
+      ],
+      "references": [
+        {
+          "title": "中国非物质文化遗产网 · 黄道婆民间信仰调查",
+          "url": "https://www.ihchina.cn/project_details/8198"
+        }
+      ]
+    },
+    {
+      "id": "guandaosheng",
+      "name": "管道昇",
+      "era": "yuan",
+      "years": "1262—1319",
+      "kind": "person",
+      "roles": [
+        "绘画与书法"
+      ],
+      "references": [
+        {
+          "title": "台北故宫 · 大汗的世纪：烟雨丛竹",
+          "url": "https://theme.npm.edu.tw/khan/Article.aspx?print=1&sNo=03009213"
+        }
+      ]
+    },
+    {
+      "id": "senggelagi",
+      "name": "祥哥剌吉",
+      "era": "yuan",
+      "years": "约1283—1331",
+      "kind": "person",
+      "roles": [
+        "收藏与鉴赏",
+        "艺术赞助",
+        "宫廷与宗室"
+      ],
+      "references": [
+        {
+          "title": "台北故宫 · 公主的雅集：蒙元皇室与书画鉴藏文化",
+          "url": "https://www.npm.gov.tw/Exhibition-Content.aspx?l=1&sno=04007405"
+        },
+        {
+          "title": "台北故宫 · 展览图录介绍",
+          "url": "https://www.npm.gov.tw/Publications-Content.aspx?l=2&sno=04007473"
+        },
+        {
+          "title": "故宫博物院 · 石渠宝笈特展：游春图",
+          "url": "https://www.dpm.org.cn/vr/stone-moat/wyd_3.html"
+        }
+      ]
+    },
+    {
+      "id": "wenchu",
+      "name": "文俶",
+      "era": "ming",
+      "years": "1595—1634",
+      "kind": "person",
+      "roles": [
+        "绘画与书法"
+      ],
+      "references": [
+        {
+          "title": "故宫博物院 · 文俶花卉图册",
+          "url": "https://www.dpm.org.cn/collection/paint/232864.html"
+        },
+        {
+          "title": "故宫博物院 · 文俶生平与萱石图",
+          "url": "https://www.dpm.org.cn/Uploads/wenhua/E9/07-01.htm"
+        }
+      ]
+    },
+    {
+      "id": "mashouzhen",
+      "name": "马守真",
+      "era": "ming",
+      "years": "1548—1604",
+      "kind": "person",
+      "roles": [
+        "绘画与书法",
+        "侍奉与依附"
+      ],
+      "references": [
+        {
+          "title": "故宫博物院 · 马守真兰竹石图扇页",
+          "url": "https://www.dpm.org.cn/collection/paint/233940.html"
+        }
+      ]
+    },
+    {
+      "id": "qinliangyu",
+      "name": "秦良玉",
+      "era": "ming",
+      "years": "1574—1648",
+      "kind": "person",
+      "roles": [
+        "军事与守土",
+        "政务与治理"
+      ],
+      "references": [
+        {
+          "title": "重庆市地方志办公室 · 秦良玉",
+          "url": "https://dfz.cq.gov.cn/zqlswh/rwby_417819/202311/t20231102_12510540.html"
+        }
+      ]
+    },
+    {
+      "id": "tanyunxian",
+      "name": "谈允贤",
+      "era": "ming",
+      "years": "明代",
+      "kind": "person",
+      "roles": [
+        "医疗与照护",
+        "学术与著述"
+      ],
+      "references": [
+        {
+          "title": "上海科学技术出版社 · 《女医杂言》出版介绍",
+          "url": "https://www.sste.com/index.php/books5/3330.html"
+        },
+        {
+          "title": "《江苏中医药》2021年第3期 · 谈允贤医案研究",
+          "url": "https://www.jstcm.cn/cn/article/pdf/preview/10.19844/j.cnki.1672-397X.2021.03.025.pdf"
+        }
+      ]
+    },
+    {
+      "id": "tangsaier",
+      "name": "唐赛儿",
+      "era": "ming",
+      "years": "明永乐年间",
+      "kind": "person",
+      "roles": [
+        "社会行动与反抗",
+        "宗教与信仰"
+      ],
+      "references": [
+        {
+          "title": "《滨州地区志》· 唐赛儿（地方志公开存档）",
+          "url": "https://shandong-chorography.org/database/bd/section/1/article/632/"
+        }
+      ]
+    },
+    {
+      "id": "zhengyisao",
+      "name": "郑一嫂",
+      "era": "qing",
+      "years": "约1775—1844",
+      "kind": "person",
+      "roles": [
+        "海上与航行",
+        "社会行动与反抗"
+      ],
+      "references": [
+        {
+          "title": "牛津大学 · Ching Shih and the Pirates of the South China Coast",
+          "url": "https://globalcapitalism.history.ox.ac.uk/article/ching-shih-and-pirates-south-china-coast-case-study?page-2666251=0"
+        },
+        {
+          "title": "英国皇家格林尼治博物馆 · Pirate Objects",
+          "url": "https://www.rmg.co.uk/file/13425/download?token=tozxHpZa"
+        }
+      ]
+    },
+    {
+      "id": "wangzhenyi",
+      "name": "王贞仪",
+      "era": "qing",
+      "years": "1768—1797",
+      "kind": "person",
+      "roles": [
+        "天文与数学",
+        "学术与著述",
+        "诗文与叙事"
+      ],
+      "references": [
+        {
+          "title": "香港太空馆 · 清代女天文学家王贞仪",
+          "url": "https://hk.space.museum/sc/web/spm/resources/curators-blog/2021/03/wang-zhenyi-an-extraordinary-woman-astronomer-from-the-qing-dynasty.html"
+        }
+      ]
+    },
+    {
+      "id": "guerniang",
+      "name": "顾二娘",
+      "era": "qing",
+      "years": "清康熙、雍正时期",
+      "kind": "person",
+      "roles": [
+        "工艺与技术",
+        "商业与经营"
+      ],
+      "references": [
+        {
+          "title": "故宫博物院 · 顾二娘",
+          "url": "https://www.dpm.org.cn/lemmas/242916.html"
+        },
+        {
+          "title": "海安博物馆 · 顾二娘造笸箩形砚",
+          "url": "https://www.jshamuseum.com/Photo_Show.asp?ClassId=41&InfoId=1330"
+        }
+      ]
+    },
+    {
+      "id": "shenshou",
+      "name": "沈寿",
+      "era": "qing",
+      "years": "1874—1921 · 清末至民国",
+      "kind": "person",
+      "roles": [
+        "工艺与技术",
+        "教育与传授",
+        "跨地域交流"
+      ],
+      "references": [
+        {
+          "title": "上海博物馆 · 沈寿刺绣藏品",
+          "url": "https://www.shanghaimuseum.net/mu/frontend/pg/article/id/CI00005019"
+        },
+        {
+          "title": "上海文博 · 沈寿与仿真绣研究",
+          "url": "https://www.shanghaimuseum.net/resource/museum_files/resource_files/20150521/ebbbede4-dc16-4ce8-becc-2b4b48c360e1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "qiujin",
+      "name": "秋瑾",
+      "era": "qing",
+      "years": "1875—1907",
+      "kind": "person",
+      "roles": [
+        "社会行动与反抗",
+        "教育与传授",
+        "诗文与叙事",
+        "跨地域交流"
+      ],
+      "references": [
+        {
+          "title": "绍兴旅游集团 · 秋瑾故居",
+          "url": "https://www.shaoxingtour.cn/jdjs/jqjs/mcjq/qjgj.htm"
+        },
+        {
+          "title": "湖南省文史研究馆 · 我的曾祖母秋瑾",
+          "url": "https://css.hunan.gov.cn/css/tslm/hxws/wssy/201604/sxrj_18/201703/t20170324_4114557.html"
+        },
+        {
+          "title": "湖南省文史研究馆 · 秋瑾与长沙",
+          "url": "https://css.hunan.gov.cn/css/tslm/hxws/wssy/201903/wssw_23mgs/202303/t20230315_29274590.html"
+        }
+      ]
+    },
+    {
+      "id": "chenduansheng",
+      "name": "陈端生",
+      "era": "qing",
+      "years": "1751—约1796",
+      "kind": "person",
+      "roles": [
+        "诗文与叙事"
+      ],
+      "references": [
+        {
+          "title": "国家图书馆 · 《再生缘》数字馆藏",
+          "url": "https://taiwanebook.ncl.edu.tw/zh-tw/book/NCL-004626962/reader"
+        },
+        {
+          "title": "中国哲学书电子化计划 · 《再生缘》及研究资料",
+          "url": "https://ctext.org/wiki.pl?chapter=359410&if=gb&remap=gb"
+        }
+      ]
+    }
+  ]
+}
