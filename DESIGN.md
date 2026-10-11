@@ -1,6 +1,6 @@
 # Design continuity
 
-- Baseline: Astra v2, verified against the user's supplied screenshot.
+- Visual system: Astra, with a continuous painted handscroll.
 - Layout: broad horizontal masthead, left-aligned large title, right introductory note, continuous handscroll on two spindles, timeline, three-column biography archive, a collapsible identity index, three story paths, closing editorial panel.
 - Color: paper `#eeece2`, light paper `#f5f2e9`, ink `#344035`, muted olive `#757967`, vermilion `#9d5141`, rule `#d0d0bf`.
 - Typography: Noto Serif SC with installed Chinese serif fallbacks. Preserve Astra proportions and spacing; use slightly larger readable body text in expanded research sections.

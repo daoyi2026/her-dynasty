@@ -1,37 +1,48 @@
-# Her Thousand Years — Astra edition
+# Her Dynasty · 她的千年
 
-A Chinese-language static archive centered on women's historical biographies, with era illustrations in the approved Astra continuous handscroll.
+A Chinese-language interactive archive of women's stories across Chinese history. Follow their lives, decisions and works through a continuous painted handscroll, then explore biographies by era, identity or keyword.
 
-## Baseline and preservation
+The collection brings together rulers, poets, physicians, artists, merchants, maritime leaders, craftspeople, scholars and women whose names were not recorded. Paintings and objects support these stories with links to museum collections, historical texts and research.
 
-Baseline paths below identify the original authoring workspace; they are not directories in this repository.
+## Explore the collection
 
-Visual source: `work/baselines/hanfu-v2`, as matched to the user's screenshot. The original Astra `style.css` and all eight approved transparent figures are unchanged. This revision was compared with `work/baselines/women-astra-v2-before-expansion`. Do not continue from the Gemini variant or overwrite an earlier archive.
+- Eight era chapters, from early China through the Qing period.
+- 32 story entries: 28 named biographies, two literary traditions and two anonymous group stories.
+- 24 overlapping identity and experience categories, connecting politics, religion, science, arts, trade, labor, family and migration.
+- 30 supporting artworks with original-image views, zoom controls, readings and references.
+- Era and identity filters, full-text search, browser-local favorites and links to individual stories.
+- A continuous handscroll with transparent figure illustrations, a paper palette, serif typography and vermilion accents.
 
-## Preview
+## Download and preview
+
+Download `her-dynasty-v1.0.0.zip` from the [v1.0.0 release](https://github.com/daoyi2026/her-dynasty/releases/tag/v1.0.0), extract it and open `index.html` in a modern browser. The release also includes a SHA-256 checksum for the download.
+
+To serve a local preview from the extracted folder or a repository clone:
 
 ```sh
 python3 -m http.server 4184 --bind 127.0.0.1 --directory .
 ```
 
-Open http://127.0.0.1:4184/. No build step is required. Direct file opening is also supported. Fonts fall back to installed Chinese serif fonts when Google Fonts is unavailable.
+Open http://127.0.0.1:4184/. No build step, account or backend is required. Favorites stay in the current browser. Reading the included material uses local assets; external references and the optional Google Fonts stylesheet require a connection. Installed Chinese serif fonts provide a fallback.
 
-## Content model
+## Sources and interpretation
 
-- 32 story entries in eight era chapters: 28 named biographies, two explicitly qualified literary traditions, and two anonymous group stories.
-- 24 nonexclusive identity/experience categories. The same person can appear in multiple categories; counts describe this collection, not a census of historical women.
-- `stories-data.js`: people, identities, narrative sections, dated events, sources and related objects.
-- `women-data.js`: 30 supporting artworks, original images and detailed readings. Original-image details remain accessible from story material links and `sources.html#images`.
-- People are placed by their lives; artworks retain their own surviving-object dates. Shen Shou spans late Qing and the Republic.
-- The scroll figures are era illustrations, not identified portraits of the named women.
-- The redundant scroll progress row has been removed. Dragging, keyboard scrolling and the dynasty timeline remain.
+Each story lists references, and each artwork retains its attribution and surviving-object date. Biographies are organized by the women's lives; a later painting of an earlier subject keeps its own date. Shen Shou's life spans the late Qing and the Republic.
 
-## Interaction
+The handscroll uses source-based AI-assisted figure redraws as era illustrations. They are not identified portraits of the women in the biographies. Detail views retain the publicly available source images. Image resolution varies by institution.
 
-Era and identity filtering, full-text search, native nested reading dialogs, original-image zoom/pan, and browser-local favorites. Favorites use `women-stories-saved-v1`; earlier painting and Hanfu collections are untouched. URLs support `?person=yuxuanji` and `?work=xiaojing` for direct reading.
+This is a curated collection, not an exhaustive census. Category counts describe the stories included here. Historical women may have several identities, and coverage varies across eras, regions and social groups.
 
-## Scope
+See [the source register](SOURCES.md) and open `sources.html` for further reading. Source links and attribution do not grant reuse rights; consult the relevant institution before redistributing its images.
 
-Coverage is curated and uneven across periods. The current selection does not exhaust the histories of every polity, region, class, ethnic group or occupation. Each story lists its sources; objects retain attribution and copying dates. Museum image previews vary in resolution.
+## Repository guide
 
-See `SOURCES.md`, `women-provenance.json` and `VERIFICATION.md` for source and validation records.
+- `index.html`: the handscroll and biography archive.
+- `stories-data.js`: biographies, identities, events, references and related objects.
+- `women-data.js`: supporting artworks, source images and readings.
+- `women.js`: browsing, search, dialogs, favorites and image controls.
+- `style.css` and `women.css`: the Astra visual system and responsive layout.
+- `sources.html`, `SOURCES.md` and `women-provenance.json`: source records.
+- `DESIGN.md` and `VERIFICATION.md`: design principles and recorded checks.
+
+Direct reading links include `index.html?person=yuxuanji` and `index.html?work=xiaojing`.

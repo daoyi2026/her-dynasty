@@ -1,8 +1,8 @@
 # Verification — 2026-10-10 biography revision
 
-## Fresh browser checks
+## Browser checks recorded on 2026-10-10
 
-- Preview served from `outputs/women-astra` at `http://127.0.0.1:4184/`.
+- The site was served locally for browser validation.
 - 32 story cards, 24 identity buttons and zero range sliders rendered.
 - Religious-life filtering returns Yu Xuanji, Tang Sai'er and Wu Zetian after the final expansion. Earlier direct interaction confirmed Yu Xuanji's biography opens from this route.
 - Art-patronage filtering and a combined Yuan/identity filter returned Sengge Lagi. Her three reference links rendered.
@@ -20,19 +20,23 @@
 ## File integrity and review
 
 - Original Astra `style.css` SHA-256: `d52b924951ba45e39cc5fcecfb4d2c440726560c4d8f2a6e61ffaed358e19762`.
-- Eight transparent figure files are byte-identical to `work/baselines/women-astra-v2-before-expansion`.
+- Eight transparent figure files remained byte-identical to the preserved Astra illustration set.
 - All 56 referenced local image files decoded successfully.
 - Story data contains 98 narrative sections and 8,210 Chinese body characters, excluding summaries, event lists and image essays.
 - Content counts: 28 named biographies, two qualified literary traditions and two group stories; 30 independent artworks.
 - JavaScript syntax, record IDs, referenced works, local image hashes and source-register counts were checked.
-- No Git repository is present. File-level differences were reviewed against the preserved baseline; changes are limited to the biography layer, expanded supporting content, supplemental styles, source records and documentation.
+- File-level differences were reviewed against the preserved baseline before the initial Git publication. Changes were limited to the biography layer, expanded supporting content, supplemental styles, source records and documentation.
 
 ## Scope and limits
 
 - This is a curated first collection, not an exhaustive census. Coverage is uneven across eras; regional, occupational and unnamed-women histories remain expandable.
 - Browser validation verifies rendered interactions and layout, not every external institution's current availability or scholarly consensus.
-- User visual approval of the revised biography reading experience remains separate from the checks above.
+- Browser checks support the recorded interactions and layout, rather than every possible browser or device.
 
-## Review captures
+## Publication checks recorded on 2026-10-11
 
-Saved under `work/women-research/review-stories-v3/`: desktop.jpg, identity-index.jpg and mobile-story.jpg.
+- The initial remote `main` commit was fetched and matched the local publication commit, with 73 tracked files.
+- Website files and assets matched the delivered edition; the initial repository README adjusted local startup instructions.
+- Publication documentation was revised to remove internal authoring paths and collaboration notes. The website's visual and interaction files were preserved.
+- Tracked files, reachable commit content, commit metadata, image metadata and five preview captures were reviewed for credentials and private identifying data. No embedded credentials, private absolute paths or GPS metadata were found. An image certificate contact belongs to the public C2PA certificate authority and was retained.
+- GitHub secret scanning and push protection were already enabled; the secret-scanning alert list was empty when checked.
