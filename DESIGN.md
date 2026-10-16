@@ -20,3 +20,4 @@
 - Phone readers use the full dynamic viewport with safe-area padding, 16 px body text, 44 px primary controls and a persistent close/save bar. Milestones start collapsed inside the phone reader and remain available on demand.
 - Image zoom supports native single-finger scrolling plus two-finger scaling. Keep reduced-motion behavior and keyboard browsing.
 - `responsive.css` owns these layout refinements; preserve the original `style.css` baseline.
+- Serve lossless WebP display copies of the eight transparent figures. Preserve their dimensions, visible RGB pixels and alpha; keep the PNG sources and both hashes in the source register. Prioritize the first figure and lazy-load later figures.

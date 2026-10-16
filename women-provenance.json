@@ -638,28 +638,36 @@
       "referenceWork": "dragon",
       "file": "assets/figures/early.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
-      "sha256": "27fcb59ac2f760b9554a0ecef0c7e8fdc3c0d229c890359b5023ca673cc3c1c4"
+      "sha256": "27fcb59ac2f760b9554a0ecef0c7e8fdc3c0d229c890359b5023ca673cc3c1c4",
+      "displayFile": "assets/figures/early.webp",
+      "displaySha256": "ff463313c2672429c284096344fe8b1a702e6fc651f9df52a41f35b1863c6b85"
     },
     {
       "era": "wei",
       "referenceWork": "admonitions",
       "file": "assets/figures/wei.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
-      "sha256": "a293ad3326940e66e0960c76857f6dac9aa323f1743a3fe3c10e0f2401e21478"
+      "sha256": "a293ad3326940e66e0960c76857f6dac9aa323f1743a3fe3c10e0f2401e21478",
+      "displayFile": "assets/figures/wei.webp",
+      "displaySha256": "30f6b87da1b5723fd7903674f87e963ea7a43506fffd0573394e9c8a052163bb"
     },
     {
       "era": "tang",
       "referenceWork": "fan",
       "file": "assets/figures/tang.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
-      "sha256": "81090bab68e4a38a89a7db59ec51331d3c9d71600f5ead7cd46de97d7b46a506"
+      "sha256": "81090bab68e4a38a89a7db59ec51331d3c9d71600f5ead7cd46de97d7b46a506",
+      "displayFile": "assets/figures/tang.webp",
+      "displaySha256": "921580d3e785477b73bd2c3ec10e9006a190657f78167a8bb16eef164c99d928"
     },
     {
       "era": "five",
       "referenceWork": "palace",
       "file": "assets/figures/five.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
-      "sha256": "5bcf988ab2ae128ac238d8fe9e43a586c99aab2d3c5bcb131f0016bebba45a97"
+      "sha256": "5bcf988ab2ae128ac238d8fe9e43a586c99aab2d3c5bcb131f0016bebba45a97",
+      "displayFile": "assets/figures/five.webp",
+      "displaySha256": "929e3348aaf47034317e42421760bc223d34b782ec7f4b0070aa2a9de49f830b"
     },
     {
       "era": "song",
@@ -667,28 +675,36 @@
       "file": "assets/figures/song-moon.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
       "sha256": "901e8ce508ccd225009fd3354364de12a54a503ba78de3f03aea70405c71715a",
-      "subject": "The central standing woman in the Song painting Women Admiring the Moon on a Terrace (Palace Museum). An anonymous era illustration, not a portrait of Li Qingzhao."
+      "subject": "The central standing woman in the Song painting Women Admiring the Moon on a Terrace (Palace Museum). An anonymous era illustration, not a portrait of Li Qingzhao.",
+      "displayFile": "assets/figures/song-moon.webp",
+      "displaySha256": "7daaa1b620f03e324099e11a1ad63bf9f1192b90c162ef70de04a5759de6ebba"
     },
     {
       "era": "yuan",
       "referenceWork": "duqiu",
       "file": "assets/figures/yuan.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
-      "sha256": "54881b22bbbabb9fe076e6237ae4c40969684981af2dfb3c9b8995246581870b"
+      "sha256": "54881b22bbbabb9fe076e6237ae4c40969684981af2dfb3c9b8995246581870b",
+      "displayFile": "assets/figures/yuan.webp",
+      "displaySha256": "fd905ec68a1f4d4e5117218e160497b0df9812682c0737cc2b391a1b68026b76"
     },
     {
       "era": "ming",
       "referenceWork": "wuling",
       "file": "assets/figures/ming.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
-      "sha256": "c87c50f70016ef0b2a30f72a52706299d9833b477b6ea056615a2963a3203436"
+      "sha256": "c87c50f70016ef0b2a30f72a52706299d9833b477b6ea056615a2963a3203436",
+      "displayFile": "assets/figures/ming.webp",
+      "displaySha256": "9c5b1e07f8ddfdecb6b47f75b62824729c9b808b82255bb01066592fd3237cc2"
     },
     {
       "era": "qing",
       "referenceWork": "reading",
       "file": "assets/figures/qing.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
-      "sha256": "cb42a3741e63f4ca520fb7f4352b348682cb319a5742d4a88371b707ec886854"
+      "sha256": "cb42a3741e63f4ca520fb7f4352b348682cb319a5742d4a88371b707ec886854",
+      "displayFile": "assets/figures/qing.webp",
+      "displaySha256": "9696ddcd391d28c7d5f2eb76459155c51238ce6a85c8a1698f392006f33d9049"
     }
   ],
   "readingReferences": {
@@ -1569,5 +1585,6 @@
       ]
     }
   ],
-  "displayFiguresUpdated": "2026-10-16"
+  "displayFiguresUpdated": "2026-10-16",
+  "displayImageEncoding": "Lossless WebP display copies preserve dimensions, visible RGB values and alpha. Original PNG sources are retained."
 }

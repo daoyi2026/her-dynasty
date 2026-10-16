@@ -7,7 +7,8 @@ window.WOMEN_DATA = {
       "title": "刻在器物，写入史书",
       "representative": "dragon",
       "intro": "从商代妇好的王室活动，到巴清的丹砂经营、班昭的史书编撰，女性以不同方式进入早期历史。",
-      "figure": "assets/figures/early.png"
+      "figure": "assets/figures/early.png",
+      "displayFigure": "assets/figures/early.webp"
     },
     {
       "id": "wei",
@@ -16,7 +17,8 @@ window.WOMEN_DATA = {
       "title": "言语之间，山河之际",
       "representative": "admonitions",
       "intro": "谢道韫在谈论中留下才思，冼夫人在梁陈隋更替间处理地方军政；表达与行动构成这一时代的两条人物线索。",
-      "figure": "assets/figures/wei.png"
+      "figure": "assets/figures/wei.png",
+      "displayFigure": "assets/figures/wei.webp"
     },
     {
       "id": "tang",
@@ -25,7 +27,8 @@ window.WOMEN_DATA = {
       "title": "以笔为途，走进时代",
       "representative": "fan",
       "intro": "上官婉儿的宫廷文书、薛涛的诗歌交往与鱼玄机的个人表达，让文字成为她们参与时代的方式。",
-      "figure": "assets/figures/tang.png"
+      "figure": "assets/figures/tang.png",
+      "displayFigure": "assets/figures/tang.webp"
     },
     {
       "id": "five",
@@ -34,7 +37,8 @@ window.WOMEN_DATA = {
       "title": "蜀地旧事，诗中姓名",
       "representative": "palace",
       "intro": "唐末至五代的蜀地故事，留下黄崇嘏的仕宦叙事与花蕊夫人的宫词传统。循文本读她们的遭际，也看故事怎样传到后世。",
-      "figure": "assets/figures/five.png"
+      "figure": "assets/figures/five.png",
+      "displayFigure": "assets/figures/five.webp"
     },
     {
       "id": "song",
@@ -43,7 +47,8 @@ window.WOMEN_DATA = {
       "title": "书卷随身，文字作证",
       "representative": "moon",
       "intro": "李清照经历南渡与藏品散失，朱淑真在诗集中留下丰富表达。她们以作品延续自己的声音。",
-      "figure": "assets/figures/song-moon.png"
+      "figure": "assets/figures/song-moon.png",
+      "displayFigure": "assets/figures/song-moon.webp"
     },
     {
       "id": "yuan",
@@ -52,7 +57,8 @@ window.WOMEN_DATA = {
       "title": "技艺远行，笔墨留名",
       "representative": "duqiu",
       "intro": "黄道婆传播纺织技术，管道昇以书画参与文人文化。手艺与知识通过她们流动，进入更多人的生活。",
-      "figure": "assets/figures/yuan.png"
+      "figure": "assets/figures/yuan.png",
+      "displayFigure": "assets/figures/yuan.webp"
     },
     {
       "id": "ming",
@@ -61,7 +67,8 @@ window.WOMEN_DATA = {
       "title": "画笔与兵戈，各有天地",
       "representative": "wuling",
       "intro": "文俶与马守真以作品表达，秦良玉以军事实践留名。创作与统兵把女性的经历带向不同领域。",
-      "figure": "assets/figures/ming.png"
+      "figure": "assets/figures/ming.png",
+      "displayFigure": "assets/figures/ming.webp"
     },
     {
       "id": "qing",
@@ -70,7 +77,8 @@ window.WOMEN_DATA = {
       "title": "江海与星空，刀笔之间",
       "representative": "reading",
       "intro": "郑一嫂组织船队，王贞仪研究天算，顾二娘雕琢砚石。她们在海洋、知识和专业制作中建立自己的位置。",
-      "figure": "assets/figures/qing.png"
+      "figure": "assets/figures/qing.png",
+      "displayFigure": "assets/figures/qing.webp"
     }
   ],
   "works": [
