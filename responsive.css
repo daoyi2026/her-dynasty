@@ -1,0 +1,374 @@
+/* Shared card rhythm and a touch layout for the original Astra handscroll. */
+.person-card {
+  height: 384px;
+  padding: 24px 0 0;
+}
+.person-card .person-open {
+  display: grid;
+  grid-template-rows: 30px 96px 64px minmax(0, 1fr) 48px;
+  height: 100%;
+  min-height: 0;
+}
+.person-card-meta {
+  align-content: start;
+  align-items: baseline;
+  gap: 4px 12px;
+  font-size: 12px;
+  line-height: 1.8;
+  padding-right: 48px;
+}
+.person-card h3 {
+  display: block;
+  margin: 10px 0 0;
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.35;
+}
+.person-name { display: block; white-space: nowrap; }
+.person-card h3 small {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.8;
+  letter-spacing: .4px;
+}
+.person-card h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  align-self: start;
+}
+.person-card p {
+  margin: 0;
+  min-height: 0;
+  max-height: 5.85em;
+  font-size: 14px;
+  line-height: 1.95;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  align-self: start;
+}
+.person-read {
+  align-self: end;
+  align-items: center;
+  margin: 0;
+  min-height: 48px;
+  padding: 8px 0;
+}
+.person-card .save-card {
+  top: 14px;
+  width: 44px;
+  height: 44px;
+  font-size: 24px;
+  line-height: 1;
+}
+.scene-painting:after { content: attr(data-hint) !important; }
+.scene-caption { min-height: 80px; }
+.scene-caption .scene-origin {
+  margin-top: 5px;
+  font-size: 9px;
+  letter-spacing: .4px;
+  color: #868976;
+}
+.dialog-actions { display: flex; align-items: center; gap: 8px; }
+.dialog-actions .person-save {
+  width: 44px !important;
+  height: 44px !important;
+  font-size: 24px !important;
+  border: 0;
+  background: transparent;
+}
+.person-milestones summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #96604e;
+}
+.person-milestones summary::-webkit-details-marker { display: none; }
+.person-milestones summary:after { content: ' ＋'; }
+.person-milestones[open] summary:after { content: ' −'; }
+.person-milestones summary:focus-visible { outline-offset: 4px; }
+.reading-dialog { overscroll-behavior: contain; }
+.dialog-top { height: 65px; min-height: 65px; padding: 10px 0; }
+.close-button { width: 44px; height: 44px; }
+.work-tabs { top: 65px; }
+.zoom-dialog[open] { display: flex; flex-direction: column; }
+.zoom-viewport { flex: 1; min-height: 0; height: auto; }
+.zoom-help { flex: none; }
+.zoom-help-touch { display: none; }
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .header nav { gap: 24px; }
+  .opening { flex-wrap: wrap; align-items: start; }
+  .opening-aside { max-width: none; }
+  .opening-aside p { font-size: 13px; }
+  .cards, .epoch-dialog .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .identity-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+  :root { --gutter: 22px; }
+  html { scroll-padding-top: 16px; }
+  body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  .header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    height: auto;
+    gap: 12px 16px;
+    padding: max(18px, env(safe-area-inset-top)) var(--gutter) 0;
+  }
+  .header .brand { font-size: 21px; letter-spacing: 2px; gap: 12px; }
+  .brand small { margin-top: 5px; font-size: 8px; letter-spacing: 2px; }
+  .header .seal { width: 28px; height: 36px; flex-basis: 28px; font-size: 14px; }
+  .header .saved-link {
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 44px;
+    font-size: 12px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+  .saved-link>span { font-size: 24px; margin-right: 5px; }
+  .saved-link small { font-size: 11px; margin-left: 5px; }
+  .header nav {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .header nav a, .header nav a:last-child {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 10px 0;
+  }
+  nav a.current:after { bottom: 4px; }
+  .opening { padding-block: 25px 28px; }
+  .opening .eyebrow { font-size: 9px; letter-spacing: 1px; margin-bottom: 13px; }
+  .opening h1 {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding-right: 23px;
+    font-size: clamp(26px, 7.4vw, 34px);
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+  }
+  .opening h1 span { margin-left: 0; white-space: nowrap; }
+  .opening .title-stamp {
+    display: block;
+    top: 4px;
+    right: 0;
+    margin: 0;
+    padding: 4px 2px;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .opening-aside { display: block; margin-top: 14px; }
+  .opening-aside p { margin: 0; font-size: 12px; line-height: 1.9; letter-spacing: .2px; }
+  .opening-aside>span { display: block; margin-top: 8px; writing-mode: horizontal-tb; font-size: 10px; letter-spacing: 1px; }
+  .scroll-shell { margin-inline: 12px; }
+  .scroll-topline { height: 48px; padding-inline: 16px; font-size: 10px; }
+  .view-switch { gap: 16px; }
+  .view-switch button { min-height: 44px; padding-block: 12px; font-size: 11px; }
+  .scroll-mount { margin-inline: 12px; }
+  .spindle { width: 10px; }
+  .spindle.left { left: -5px; }
+  .spindle.right { right: -5px; }
+  .spindle:before, .spindle:after { width: 8px; }
+  .scroll-viewport {
+    height: 460px;
+    height: clamp(400px, 58svh, 500px);
+    container-type: inline-size;
+    scroll-snap-type: x proximity;
+    scroll-padding-inline: 12px;
+  }
+  .scroll-track { padding-right: 16px; }
+  .scroll-scene {
+    width: calc(100vw - 74px);
+    width: calc(100cqw - 24px);
+    display: grid;
+    grid-template-rows: minmax(0, 1fr) 104px;
+    padding: 18px 12px 16px;
+    scroll-snap-align: center;
+  }
+  .scene-era { left: 8px; top: 20px; gap: 8px; }
+  .scene-era strong { font-size: 21px; letter-spacing: 5px; }
+  .scene-era span { font-size: 8px; }
+  .scroll-scene .scene-painting { height: 100%; min-height: 0; padding: 22px 4px 0 24px; }
+  .scene-painting:after { right: 0; bottom: 8px; padding: 7px 9px; font-size: 10px; opacity: 1; }
+  .scene-caption { min-height: 0; padding: 10px 0 0; gap: 8px; align-items: end; }
+  .scene-caption>div { min-width: 0; }
+  .scene-caption button { min-height: 30px; }
+  .scene-caption h3 { font-size: 15px; line-height: 1.6; letter-spacing: .6px; margin-bottom: 3px; }
+  .scene-caption p { max-width: none; font-size: 10px; line-height: 1.8; letter-spacing: .3px; }
+  .scene-caption .scene-origin { font-size: 9px; margin-top: 4px; }
+  .scene-index { font-size: 24px; padding-bottom: 2px; }
+  .scroll-preface, .scroll-ending { scroll-snap-align: center; }
+  .timeline-section { padding: 24px 0 8px; }
+  .timeline-label { margin-bottom: 18px; font-size: 12px; }
+  .timeline-label small { font-size: 8px; letter-spacing: 1px; }
+  .timeline { gap: 14px; padding: 0 4px 10px; scrollbar-width: none; }
+  .timeline::-webkit-scrollbar { display: none; }
+  .timeline:before { display: none; }
+  .timeline button { flex: none; min-width: 64px; min-height: 68px; padding: 0 4px 8px; font-size: 12px; }
+  .timeline button:before { content: ''; position: absolute; left: 0; right: -14px; top: 32px; height: 1px; background: var(--line); }
+  .timeline button:first-child:before { left: 50%; }
+  .timeline button:last-child:before { right: 50%; }
+  .timeline button:after { top: 30px; }
+  .timeline small { margin-top: 24px; font-size: 9px; }
+  .collection { padding-block: 32px 40px; }
+  .section-top h2 { font-size: 27px; letter-spacing: 2px; }
+  .section-top h2 span { display: block; margin: 9px 0 0; font-size: 12px; letter-spacing: .5px; }
+  .filters { justify-content: start; gap: 24px; margin-top: 18px; }
+  .filters button { min-height: 44px; padding-block: 11px; font-size: 13px; }
+  .identity-atlas { margin-block: 8px 20px; padding-block: 10px; }
+  .identity-atlas summary { justify-content: center; min-height: 66px; gap: 5px; }
+  .identity-atlas summary>span { font-size: 17px; letter-spacing: 1px; }
+  .identity-atlas summary small { font-size: 11px; line-height: 1.6; }
+  .identity-atlas>p { font-size: 13px; }
+  .identity-grid { gap: 8px; padding-bottom: 12px; }
+  .identity-grid button { min-height: 48px; padding: 10px; font-size: 13px; }
+  .collection-tools { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; margin-block: 20px 4px; padding-bottom: 18px; }
+  .collection-tools>p { margin: 0; font-size: 11px; line-height: 1.8; }
+  .filter-selects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; }
+  .filter-selects select { width: 100%; min-width: 0; min-height: 44px; font-size: 16px; padding: 8px 0; }
+  .search { min-width: 0; gap: 8px; border-bottom: 1px solid var(--line); }
+  .search input { width: 100%; min-width: 0; min-height: 44px; font-size: 16px; padding-block: 8px; }
+  .search input::placeholder { font-size: 12px; }
+  .search button { flex: none; min-height: 44px; padding: 8px 0 8px 8px; font-size: 13px; }
+  .cards, .epoch-dialog .catalog-grid { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .person-card { height: 360px; padding-top: 22px; }
+  .person-card .person-open { grid-template-rows: 30px 88px 58px minmax(0, 1fr) 48px; }
+  .person-card-meta { gap: 4px 12px; font-size: 12px; }
+  .person-card h3 { font-size: 31px; letter-spacing: 3px; margin: 7px 0 0; }
+  .person-card h3 small { font-size: 12px; letter-spacing: .5px; margin-top: 8px; }
+  .person-card h4 { font-size: 16px; }
+  .person-card p { font-size: 14px; }
+  .person-read { font-size: 13px; }
+  .person-card .save-card { top: 13px; right: 0; }
+  .material-link p { font-size: 14px; line-height: 1.9; }
+  .text-link, .material-link .text-link { display: inline-flex; align-items: center; min-height: 44px; font-size: 13px; }
+  .story-paths { margin-top: 22px; }
+  .story-paths h3 { font-size: 22px; }
+  .story-paths p { font-size: 15px; }
+  .story-paths button { min-height: 44px; font-size: 14px; }
+  .living { gap: 18px; }
+  .living h2 { font-size: 22px; }
+  .living p:not(.eyebrow) { font-size: 13px; }
+  .living>.text-link { margin-left: 48px; }
+  footer { align-items: start; padding-block: 24px; }
+  footer>a:last-child { font-size: 11px; line-height: 1.8; }
+  .archive-note { font-size: 11px; line-height: 1.9; padding-bottom: max(24px, env(safe-area-inset-bottom)); }
+  .reading-dialog, .zoom-dialog {
+    width: 100%;
+    max-width: none;
+    height: 100dvh;
+    max-height: 100dvh;
+    margin: 0;
+    border: 0;
+    padding: 0 max(22px, env(safe-area-inset-right)) max(28px, env(safe-area-inset-bottom)) max(22px, env(safe-area-inset-left));
+  }
+  .dialog-top {
+    height: calc(65px + env(safe-area-inset-top));
+    min-height: calc(65px + env(safe-area-inset-top));
+    padding: calc(10px + env(safe-area-inset-top)) 0 10px;
+  }
+  .dialog-top .eyebrow { min-width: 0; font-size: 11px; line-height: 1.7; letter-spacing: .6px; }
+  .close-button { width: 44px; height: 44px; font-size: 29px; }
+  .person-dialog .dialog-top .eyebrow { max-width: none; font-size: 11px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+  .dialog-actions { flex: none; gap: 0; }
+  .person-dialog .person-heading { padding: 24px 0; }
+  .person-dialog .person-heading h2 { font-size: 36px; line-height: 1.5; letter-spacing: 3px; margin: 12px 0; }
+  .person-heading h3 { font-size: 22px; line-height: 1.7; margin: 12px 0; }
+  .person-heading>p:first-child { font-size: 12px; line-height: 1.8; letter-spacing: .5px; }
+  .person-heading>p:last-child { font-size: 15px; line-height: 2; }
+  .person-dialog .person-reading-layout { padding: 22px 0; gap: 28px; }
+  .person-milestones { padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .person-milestones summary { display: flex; justify-content: space-between; align-items: center; min-height: 44px; font-size: 15px; }
+  .person-events { display: block; margin: 18px 3px 0; border-left: 1px solid var(--line); }
+  .person-events li { padding-left: 18px; font-size: 14px; }
+  .person-events li:before { left: -3px; }
+  .reading-section { padding-bottom: 24px; margin-bottom: 24px; }
+  .reading-section-head { gap: 12px; align-items: baseline; margin-bottom: 16px; }
+  .reading-section-head>span { font-size: 28px; }
+  .reading-section-head h3 { font-size: 21px; line-height: 1.7; }
+  .reading-section>p, .prose { font-size: 16px; line-height: 2; text-align: left; }
+  .person-sources a { padding-block: 4px; font-size: 14px; }
+  .related-row button { min-height: 44px; font-size: 14px; text-align: left; line-height: 1.8; }
+  .epoch-intro { text-align: left; margin-block: 24px 28px; }
+  .epoch-intro h2 { font-size: 25px; line-height: 1.6; letter-spacing: 1px; }
+  .epoch-intro>p { font-size: 15px; line-height: 2; }
+  .epoch-intro .period-note { font-size: 12px; }
+  .work-heading { padding-block: 24px 14px; }
+  .work-heading h2 { font-size: 27px; line-height: 1.6; }
+  .work-heading p { font-size: 13px; line-height: 1.9; }
+  .reading-dialog .work-tabs { top: calc(65px + env(safe-area-inset-top)); gap: 0; justify-content: space-between; margin-bottom: 22px; }
+  .reading-dialog .work-tabs button { min-height: 48px; padding-block: 12px; font-size: 14px; white-space: nowrap; }
+  .reading-dialog .work-image-button { height: 280px; height: clamp(220px, 38svh, 360px); padding: 12px; }
+  .work-overview>p { font-size: 16px; }
+  .work-overview dt { font-size: 12px; }
+  .work-overview dd { font-size: 14px; }
+  .album-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .album-controls button { min-height: 44px; padding: 8px; font-size: 12px; }
+  .source-link { min-height: 44px; display: inline-flex; align-items: center; font-size: 14px; }
+  .zoom-dialog { padding: max(10px, env(safe-area-inset-top)) max(12px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom)) max(12px, env(safe-area-inset-left)); }
+  .zoom-top { gap: 12px; }
+  .zoom-top h2 { min-width: 0; font-size: 15px; line-height: 1.7; }
+  .zoom-tools { gap: 8px; padding-block: 8px 12px; }
+  .zoom-tools button { min-height: 44px; min-width: 44px; padding: 8px 12px; font-size: 15px; }
+  #zoomResolution { font-size: 11px; line-height: 1.8; }
+  .zoom-help { font-size: 11px; line-height: 1.8; padding-top: 10px; }
+  .zoom-help-pointer { display: none; }
+  .zoom-help-touch { display: inline; }
+  .sources-page { padding: max(30px, env(safe-area-inset-top)) max(22px, env(safe-area-inset-right)) max(30px, env(safe-area-inset-bottom)) max(22px, env(safe-area-inset-left)); }
+  .sources-page h1 { font-size: 32px; line-height: 1.6; }
+  .sources-page .source-entry p, .sources-page .source-meta { font-size: 14px; }
+  .sources-page .source-entry a { font-size: 14px; padding-block: 5px; }
+  .toast { bottom: max(20px, env(safe-area-inset-bottom)); font-size: 13px; }
+}
+
+@media (max-width: 360px) {
+  :root { --gutter: 18px; }
+  .header { gap: 10px; }
+  .header .brand { font-size: 19px; letter-spacing: 1px; }
+  .saved-link small { margin-left: 3px; }
+  .opening h1 { gap: 8px; font-size: 26px; letter-spacing: 1px; }
+  .opening .title-stamp { font-size: 9px; }
+  .opening-aside p { font-size: 11px; }
+  .reading-dialog { padding-inline: max(18px, env(safe-area-inset-left)) max(18px, env(safe-area-inset-right)); }
+  .person-dialog .person-heading h2 { font-size: 32px; letter-spacing: 1px; }
+  .scene-caption h3 { font-size: 14px; letter-spacing: 0; }
+  .scene-caption p { font-size: 9px; }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .reading-dialog, .zoom-dialog {
+    width: 100%;
+    height: 100dvh;
+    max-height: 100dvh;
+    margin: 0;
+    border: 0;
+    padding-inline: max(24px, env(safe-area-inset-left)) max(24px, env(safe-area-inset-right));
+  }
+  .sources-page { padding-inline: max(26px, env(safe-area-inset-left)) max(26px, env(safe-area-inset-right)); }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .zoom-help-pointer { display: none; }
+  .zoom-help-touch { display: inline; }
+}

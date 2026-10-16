@@ -7,6 +7,7 @@
   const escape = text => String(text).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const workById = id => works.find(work => work.id === id);
   const epochById = id => epochs.find(epoch => epoch.id === id);
+  const compactLayout = matchMedia('(max-width: 700px)');
   const storageKey = 'women-stories-saved-v1';
   let saved = new Set();
   try { const stored = JSON.parse(localStorage.getItem(storageKey) || '[]'); if (Array.isArray(stored)) saved = new Set(stored.filter(id => personById(id))); } catch (_) { /* Reading remains available when storage is blocked. */ }
@@ -23,11 +24,11 @@
     document.querySelectorAll('[data-save]').forEach(button => { const active = saved.has(button.dataset.save); button.classList.toggle('favorited', active); button.setAttribute('aria-pressed', active); button.textContent = active ? '♥' : '♡'; });
   }
   function personCard(person) {
-    return `<article class="card person-card"><button class="person-open" data-person="${person.id}" aria-label="阅读${escape(person.name)}的故事"><div class="person-card-meta"><span>${epochById(person.era).name}</span><span>${escape(person.role)}</span></div><h3>${escape(person.name)}<small>${escape(person.years)}</small></h3><h4>${escape(person.headline)}</h4><p>${escape(person.summary)}</p><span class="person-read">读她的故事 <span>↗</span></span></button><button class="save-card" data-save="${person.id}" aria-label="收藏${escape(person.name)}的故事" aria-pressed="${saved.has(person.id)}">♡</button></article>`;
+    return `<article class="card person-card"><button class="person-open" data-person="${person.id}" aria-label="阅读${escape(person.name)}的故事"><div class="person-card-meta"><span>${epochById(person.era).name}</span><span>${escape(person.role)}</span></div><h3><span class="person-name">${escape(person.cardTitle || person.name)}</span><small>${escape(person.years)}</small></h3><h4>${escape(person.headline)}</h4><p>${escape(person.summary)}</p><span class="person-read">读她的故事 <span>↗</span></span></button><button class="save-card" data-save="${person.id}" aria-label="收藏${escape(person.name)}的故事" aria-pressed="${saved.has(person.id)}">♡</button></article>`;
   }
   function renderCatalog() {
     const query = state.search.trim().toLocaleLowerCase();
-    const results = people.filter(p => (!state.savedOnly || saved.has(p.id)) && (state.era === 'all' || p.era===state.era) && (state.scene === 'all' || p.roles.includes(state.scene)) && (!query || [p.name,p.years,...p.roles,p.place,p.headline,p.summary,...p.sections.flatMap(x=>[x.title,x.body])].join(' ').toLocaleLowerCase().includes(query)));
+    const results = people.filter(p => (!state.savedOnly || saved.has(p.id)) && (state.era === 'all' || p.era===state.era) && (state.scene === 'all' || p.roles.includes(state.scene)) && (!query || [p.name,p.cardTitle || '',p.years,...p.roles,p.place,p.headline,p.summary,...p.sections.flatMap(x=>[x.title,x.body])].join(' ').toLocaleLowerCase().includes(query)));
     $('catalogGrid').innerHTML=results.length?results.map(personCard).join(''):'<div class="empty-state"><p>暂时没有符合这些条件的人物。</p><button class="ink-button" data-reset>清除筛选，浏览全部人物</button></div>';
     $('filterCount').textContent=`${results.length} / ${people.length} 则故事 · 人物、群像与文献传述`;
     document.querySelectorAll('[data-role]').forEach(b=>{const active=b.dataset.role===state.scene;b.classList.toggle('active',active);b.setAttribute('aria-pressed',active);});
@@ -45,7 +46,7 @@
     $('personEvents').innerHTML=p.events.map(x=>`<li><strong>${escape(x.date)}</strong><span>${escape(x.text)}</span></li>`).join('');
     $('personReferences').innerHTML=p.references.map(x=>`<a href="${escape(x.url)}" target="_blank" rel="noopener">${escape(x.title)} ↗</a>`).join('');
     $('personMaterials').innerHTML=p.works.length?`<h3>${p.kind==='group'?'故事中的图像':'与她有关的图像'}</h3><div class="related-row">${p.works.map(id=>`<button data-work="${id}">${escape(workById(id).title)} · ${p.kind==='group'?'原作细看':'后世纪念图'} ↗</button>`).join('')}</div>`:'';
-    $('personSave').dataset.save=p.id;updateSaved();$('personDialog').showModal();$('personDialog').scrollTop=0;
+    $('personSave').dataset.save=p.id;$('personSave').setAttribute('aria-label',`收藏${p.name}的故事`);$('personMilestones').open=!compactLayout.matches;updateSaved();$('personDialog').showModal();$('personDialog').scrollTop=0;
   }
   function resetFilters() { state.savedOnly=false; state.era='all'; state.scene='all'; state.search=''; $('eraFilter').value='all'; $('sceneFilter').value='all'; $('catalogSearchInput').value=''; renderCatalog(); }
   const viewport = $('scrollViewport');
@@ -54,14 +55,17 @@ function landscape() {
 }
   $('epochSlotsWrapper').innerHTML = landscape() + '<div class="scroll-preface"><h2>她的千年</h2><p>循着她的足迹<br>读见千年故事</p><span class="small-seal">读她</span></div>' + epochs.map((epoch, index) => {
     const work=workById(epoch.representative), count=people.filter(p=>p.era===epoch.id).length;
-    return `<article class="scroll-scene" data-era="${epoch.id}"><div class="scene-era"><strong>${epoch.name}</strong><span>${epoch.range}</span></div><button class="scene-painting" data-epoch="${epoch.id}" aria-label="打开${epoch.name}专题，${count}则女性故事"><img style="--crop:${work.crop}" src="${epoch.figure}" data-figure="${epoch.figure}" data-original="${work.thumb}" alt="据${escape(work.title)}制作的人物重绘展示图" ${index>2?'loading="lazy"':''} draggable="false"></button><div class="scene-caption"><div><button data-epoch="${epoch.id}" aria-label="进入${epoch.name}专题"><h3>${epoch.title}</h3></button><p>${people.filter(p=>p.era===epoch.id).map(p=>p.name).slice(0,3).join(" · ")}<br>${count} 则故事 · 点击读她们的故事</p></div><span class="scene-index">${String(index+1).padStart(2,'0')}</span></div></article>`;
+    return `<article class="scroll-scene" data-era="${epoch.id}"><div class="scene-era"><strong>${epoch.name}</strong><span>${epoch.range}</span></div><button class="scene-painting" data-epoch="${epoch.id}" data-hint="${count} 则故事 ↗" aria-label="打开${epoch.name}专题，${count}则女性故事"><img style="--crop:${work.crop}" src="${epoch.figure}" data-figure="${epoch.figure}" data-original="${work.thumb}" data-title="${escape(work.title)}" alt="据${escape(work.title)}制作的人物重绘展示图" ${index>2?'loading="lazy"':''} draggable="false"></button><div class="scene-caption"><div><button data-epoch="${epoch.id}" aria-label="进入${epoch.name}专题"><h3>${epoch.title}</h3></button><p>${people.filter(p=>p.era===epoch.id).map(p=>p.cardTitle || p.name).slice(0,3).join(" · ")}<br>${count} 则故事 · 点击读她们的故事</p><p class="scene-origin">画中人出自《${escape(work.title)}》</p></div><span class="scene-index">${String(index+1).padStart(2,'0')}</span></div></article>`;
   }).join('') + '<div class="scroll-ending"><h2>她的故事未完</h2><p>姓名有来处<br>故事有回声</p><span class="small-seal">续</span></div>';
   $('timelineEpochsBar').innerHTML=epochs.map(e=>`<button data-jump="${e.id}" aria-controls="scrollViewport">${e.name}<small>${e.range}</small></button>`).join('');
-  function scrollToEpoch(id) { const slot = document.querySelector(`[data-era="${id}"]`); viewport.scrollTo({left:Math.max(0,slot.offsetLeft-(viewport.clientWidth-slot.offsetWidth)/2),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}); }
+  let activeEpoch = epochs[0].id;
+  function scrollToEpoch(id, behavior='smooth') { const slot = document.querySelector(`[data-era="${id}"]`); viewport.scrollTo({left:Math.max(0,slot.offsetLeft-(viewport.clientWidth-slot.offsetWidth)/2),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':behavior}); }
   function syncScroll() {
     let current=epochs[0].id, distance=Infinity;
     document.querySelectorAll('.scroll-scene').forEach(slot => { const d=Math.abs(slot.offsetLeft+slot.offsetWidth/2-viewport.scrollLeft-viewport.clientWidth/2);if(d<distance){distance=d;current=slot.dataset.era;} });
+    const changed=current!==activeEpoch;activeEpoch=current;
     document.querySelectorAll('[data-jump]').forEach(button => { const active=button.dataset.jump===current;button.classList.toggle('active',active); if(active)button.setAttribute('aria-current','true');else button.removeAttribute('aria-current'); });
+    if(changed && compactLayout.matches){const bar=$('timelineEpochsBar'),button=bar.querySelector('[aria-current]');bar.scrollTo({left:button.offsetLeft-(bar.clientWidth-button.offsetWidth)/2,behavior:'auto'});}
   }
   viewport.addEventListener('scroll',syncScroll,{passive:true});
   let scrollDrag=null, suppressClick=false;
@@ -71,8 +75,8 @@ function landscape() {
   ['pointerup','pointercancel','lostpointercapture'].forEach(type=>viewport.addEventListener(type,endScrollDrag));
   viewport.addEventListener('click',event=>{if(suppressClick){event.preventDefault();event.stopImmediatePropagation();suppressClick=false;}},true);
 
-  viewport.addEventListener('keydown',event=>{if(event.target!==viewport)return;if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();viewport.scrollBy({left:event.key==='ArrowRight'?330:-330,behavior:'smooth'});}});
-  function mode(whole){viewport.querySelectorAll('.scene-painting img').forEach(img=>{img.src=whole?img.dataset.original:img.dataset.figure;img.alt=whole?'馆方公开原图':'依据馆藏原画制作的人物重绘展示图';});viewport.classList.toggle('whole-view',whole);viewport.querySelectorAll('.scroll-scene').forEach(scene=>scene.classList.toggle('original-mode',whole));$('wholeMode').classList.toggle('active',whole);$('cropMode').classList.toggle('active',!whole);$('wholeMode').setAttribute('aria-pressed',whole);$('cropMode').setAttribute('aria-pressed',!whole);}
+  viewport.addEventListener('keydown',event=>{if(event.target!==viewport)return;if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();const index=epochs.findIndex(e=>e.id===activeEpoch),next=Math.min(epochs.length-1,Math.max(0,index+(event.key==='ArrowRight'?1:-1)));scrollToEpoch(epochs[next].id);}});
+  function mode(whole){viewport.querySelectorAll('.scene-painting img').forEach(img=>{img.src=whole?img.dataset.original:img.dataset.figure;img.alt=whole?`${img.dataset.title} · 馆方公开原图`:`据${img.dataset.title}制作的人物重绘展示图`;img.closest('.scroll-scene').querySelector('.scene-origin').textContent=`${whole?'馆方原作':'画中人出自'}《${img.dataset.title}》`;});viewport.classList.toggle('whole-view',whole);viewport.querySelectorAll('.scroll-scene').forEach(scene=>scene.classList.toggle('original-mode',whole));$('wholeMode').classList.toggle('active',whole);$('cropMode').classList.toggle('active',!whole);$('wholeMode').setAttribute('aria-pressed',whole);$('cropMode').setAttribute('aria-pressed',!whole);}
   $('wholeMode').addEventListener('click',()=>mode(true));$('cropMode').addEventListener('click',()=>mode(false));
   function renderEpochWorks(){const results=people.filter(p=>p.era===state.epoch);$('epochGrid').innerHTML=results.map(personCard).join('');$('epochCount').textContent=`${results.length} 则故事 · 阅读经历、转折与留下的作品`;updateSaved();}
   function openEpoch(id){const e=epochById(id);state.epoch=id;$('epochKicker').textContent=`时代人物 / ${e.range}`;$('epochTitle').textContent=`${e.name} · ${e.title}`;$('epochIntro').textContent=e.intro;renderEpochWorks();$('epochDialog').showModal();$('epochDialog').scrollTop=0;}
@@ -93,6 +97,11 @@ function landscape() {
   $('zoomDialog').addEventListener('keydown',event=>{if(event.key==='+'||event.key==='='){event.preventDefault();setScale(state.scale+.5);}if(event.key==='-'){event.preventDefault();setScale(state.scale-.5);}});
   let drag=null;
   const zoomArea=$('zoomViewport');zoomArea.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse'||event.button!==0)return;drag={x:event.clientX,y:event.clientY,left:zoomArea.scrollLeft,top:zoomArea.scrollTop};zoomArea.setPointerCapture(event.pointerId);});zoomArea.addEventListener('pointermove',event=>{if(!drag)return;zoomArea.scrollLeft=drag.left+drag.x-event.clientX;zoomArea.scrollTop=drag.top+drag.y-event.clientY;});['pointerup','pointercancel','lostpointercapture'].forEach(type=>zoomArea.addEventListener(type,()=>drag=null));
+  let pinch=null;
+  const touchDistance=touches=>Math.hypot(touches[0].clientX-touches[1].clientX,touches[0].clientY-touches[1].clientY);
+  zoomArea.addEventListener('touchstart',event=>{if(event.touches.length!==2)return;event.preventDefault();pinch={distance:touchDistance(event.touches),scale:state.scale};},{passive:false});
+  zoomArea.addEventListener('touchmove',event=>{if(!pinch||event.touches.length!==2)return;event.preventDefault();if(pinch.distance>0)setScale(pinch.scale*touchDistance(event.touches)/pinch.distance);},{passive:false});
+  ['touchend','touchcancel'].forEach(type=>zoomArea.addEventListener(type,()=>pinch=null,{passive:true}));
   $('eraFilter').innerHTML+=epochs.map(e=>`<option value="${e.id}">${e.name}</option>`).join('');$('sceneFilter').innerHTML+=[...new Set(people.flatMap(p=>p.roles))].map(t=>`<option>${t}</option>`).join('');
   $('eraFilter').addEventListener('change',e=>{state.era=e.target.value;renderCatalog();});$('sceneFilter').addEventListener('change',e=>{state.scene=e.target.value;renderCatalog();});$('catalogSearchInput').addEventListener('input',e=>{state.search=e.target.value;renderCatalog();});$('clearFilters').addEventListener('click',resetFilters);
   $('savedNav').addEventListener('click',()=>{resetFilters();state.savedOnly=true;renderCatalog();$('section-catalog').scrollIntoView({behavior:'smooth'});});$('savedFilter').addEventListener('click',()=>{state.savedOnly=true;renderCatalog();});$('allFilter').addEventListener('click',()=>{state.savedOnly=false;renderCatalog();});
@@ -100,13 +109,15 @@ function landscape() {
   document.querySelector('.work-tabs').addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const buttons=[...document.querySelectorAll('.work-tabs [data-tab]')];let index=buttons.indexOf(document.activeElement);index=event.key==='Home'?0:event.key==='End'?buttons.length-1:(index+(event.key==='ArrowRight'?1:-1)+buttons.length)%buttons.length;buttons[index].focus();tab(buttons[index].dataset.tab);});
   document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('click',event=>{if(event.target!==dialog)return;const box=dialog.getBoundingClientRect();if(event.clientX<box.left||event.clientX>box.right||event.clientY<box.top||event.clientY>box.bottom)dialog.close();}));
   $('epochDialog').addEventListener('close',()=>state.epoch=null);
-  window.addEventListener('resize',()=>{syncScroll();if($('zoomDialog').open)setScale(state.scale);});
+  window.addEventListener('resize',()=>{const current=activeEpoch;requestAnimationFrame(()=>{scrollToEpoch(current,'auto');syncScroll();if($('zoomDialog').open)setScale(state.scale);});});
   const roles=[...new Set(people.flatMap(p=>p.roles))];
   $('identityGrid').innerHTML=roles.map(role=>`<button data-role="${escape(role)}" aria-pressed="false"><span>${escape(role)}</span><small>${people.filter(p=>p.roles.includes(role)).length}</small></button>`).join('');
   $('identityCount').textContent=`${roles.length} 个入口 · 同一人物可有多种身份`;
   $('storyStats').textContent=`八段时代 · ${people.length} 则故事 · ${roles.length} 种身份与经历`;
   document.querySelectorAll('[data-role]').forEach(button=>button.addEventListener('click',()=>{state.scene=state.scene===button.dataset.role?'all':button.dataset.role;state.era='all';state.search='';state.savedOnly=false;$('sceneFilter').value=state.scene;$('eraFilter').value='all';$('catalogSearchInput').value='';renderCatalog();$('filterCount').scrollIntoView({behavior:'smooth',block:'center'});}));
+  if(compactLayout.matches)document.querySelector('.identity-atlas').open=false;
   renderCatalog();syncScroll();
+  if(compactLayout.matches)requestAnimationFrame(()=>scrollToEpoch(epochs[0].id,'auto'));
   const params=new URLSearchParams(location.search);
   if(params.has('person')&&personById(params.get('person')))openPerson(params.get('person'));
   else if(params.has('work')&&workById(params.get('work')))openWork(params.get('work'));

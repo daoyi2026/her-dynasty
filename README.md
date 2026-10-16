@@ -41,7 +41,7 @@ See [the source register](SOURCES.md) and open `sources.html` for further readin
 - `stories-data.js`: biographies, identities, events, references and related objects.
 - `women-data.js`: supporting artworks, source images and readings.
 - `women.js`: browsing, search, dialogs, favorites and image controls.
-- `style.css` and `women.css`: the Astra visual system and responsive layout.
+- `style.css`, `women.css` and `responsive.css`: the Astra visual system, shared story cards and touch layout.
 - `sources.html`, `SOURCES.md` and `women-provenance.json`: source records.
 - `DESIGN.md` and `VERIFICATION.md`: design principles and recorded checks.
 

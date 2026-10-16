@@ -41,9 +41,9 @@ window.WOMEN_DATA = {
       "name": "两宋",
       "range": "960—1279",
       "title": "书卷随身，文字作证",
-      "representative": "spinning",
+      "representative": "moon",
       "intro": "李清照经历南渡与藏品散失，朱淑真在诗集中留下丰富表达。她们以作品延续自己的声音。",
-      "figure": "assets/figures/song.png"
+      "figure": "assets/figures/song-moon.png"
     },
     {
       "id": "yuan",

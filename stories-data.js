@@ -670,6 +670,7 @@ window.WOMEN_STORIES = [
   {
     "id": "women-musicians",
     "name": "夜宴中的女乐",
+    "cardTitle": "夜宴女乐",
     "era": "five",
     "years": "五代南唐题材",
     "roles": [
@@ -827,6 +828,7 @@ window.WOMEN_STORIES = [
   {
     "id": "spinners",
     "name": "纺线与育儿的妇女",
+    "cardTitle": "纺车旁的妇女",
     "era": "song",
     "years": "宋代图像中的无名女性",
     "roles": [

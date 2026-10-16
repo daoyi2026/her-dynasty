@@ -663,10 +663,11 @@
     },
     {
       "era": "song",
-      "referenceWork": "spinning",
-      "file": "assets/figures/song.png",
+      "referenceWork": "moon",
+      "file": "assets/figures/song-moon.png",
       "method": "AI-assisted redraw based on the original museum image; transparent background. Not a pixel-exact extraction or evidence for artifact details.",
-      "sha256": "159b325db1c15486508091fea7f0717c33b6866f6b3f67aacfe4ba56cb80cd38"
+      "sha256": "901e8ce508ccd225009fd3354364de12a54a503ba78de3f03aea70405c71715a",
+      "subject": "The central standing woman in the Song painting Women Admiring the Moon on a Terrace (Palace Museum). An anonymous era illustration, not a portrait of Li Qingzhao."
     },
     {
       "era": "yuan",
@@ -1567,5 +1568,6 @@
         }
       ]
     }
-  ]
+  ],
+  "displayFiguresUpdated": "2026-10-16"
 }
