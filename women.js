@@ -68,6 +68,17 @@ function landscape() {
     if(changed && compactLayout.matches){const bar=$('timelineEpochsBar'),button=bar.querySelector('[aria-current]');bar.scrollTo({left:button.offsetLeft-(bar.clientWidth-button.offsetWidth)/2,behavior:'auto'});}
   }
   viewport.addEventListener('scroll',syncScroll,{passive:true});
+  viewport.addEventListener('wheel',event=>{
+    if(event.ctrlKey||event.metaKey||event.shiftKey||Math.abs(event.deltaX)>Math.abs(event.deltaY))return;
+    const unit=event.deltaMode===1?40:event.deltaMode===2?viewport.clientWidth:1;
+    const left=viewport.scrollLeft,max=Math.max(0,viewport.scrollWidth-viewport.clientWidth);
+    const delta=event.deltaY*unit;
+    if((delta<0&&left<=1)||(delta>0&&left>=max-1))return;
+    const next=Math.max(0,Math.min(max,left+delta));
+    if(next===left)return;
+    event.preventDefault();
+    viewport.scrollLeft=next;
+  },{passive:false});
   let scrollDrag=null, suppressClick=false;
   viewport.addEventListener('pointerdown',event=>{if(event.pointerType!=='mouse'||event.button!==0)return;scrollDrag={x:event.clientX,left:viewport.scrollLeft,moved:false};suppressClick=false;});
   viewport.addEventListener('pointermove',event=>{if(!scrollDrag)return;const dx=event.clientX-scrollDrag.x;if(Math.abs(dx)>5){scrollDrag.moved=true;viewport.classList.add('dragging');viewport.setPointerCapture(event.pointerId);}if(scrollDrag.moved){event.preventDefault();viewport.scrollLeft=scrollDrag.left-dx;}});
